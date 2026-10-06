@@ -1,3 +1,4 @@
+import "./App.css"
 import { useState } from "react"; 
 import Navbar from "./components/Navbar"; 
 import Home from "./sections/Home"; 
@@ -5,6 +6,8 @@ import About from "./sections/About";
 import FrontendProfile from "./sections/FrontendProfile"; 
 import LIA from "./sections/LIA"; import Projects from "./sections/Projects"; 
 import CV from "./sections/CV"; import Contact from "./sections/Contact"; 
+
+
 function App() { 
   
   const [activeSection, setActiveSection] = useState("home"); 

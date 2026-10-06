@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Färger */
+  --color-bg: #0b0d10;
+  --color-text: #ffffff;
+  --color-text-soft: #d0d0d0;
+
+  /* Neon */
+  --neon-turquoise: #2affff;
+  --neon-purple: #9b4dff;
+  --neon-pink: #ff4dd4;
+  --neon-orange: #ff9f3f;
+  --neon-gold: #ffe9a3;
+
+  /* Typsnitt */
+  --font-stack: "Inter", "Segoe UI", sans-serif;
+  --font-aclonica: "Aclonica", sans-serif;
+
+  /* Layout */
+  --max-width: 1200px;
+  --section-padding: 4rem 2rem;
+
+  /* Gradient */
+  --neon-gradient: linear-gradient(
+    135deg,
+    var(--neon-turquoise),
+    var(--neon-purple),
+    var(--neon-pink),
+    var(--neon-orange)
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-stack);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-aclonica);
+}
+
+h1, h2 {
+  margin: 2rem;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
