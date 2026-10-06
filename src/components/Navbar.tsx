@@ -1,12 +1,21 @@
 import styles from '../styles/Navbar.module.css';
+import { useState } from 'react';
 
 type NavbarProps = {
     setActiveSection: (section: string) => void;
 };
 
 function Navbar({ setActiveSection }: NavbarProps) {
+    
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <nav className={styles.navbar}>
+            <button className={styles.menuButton} onClick={toggleMenu}> ☰ </button>
             <ul className={styles.navList}>
                 <li><button className={styles.navButton} onClick={() => setActiveSection("home")}>Hem</button></li>
                 <li><button className={styles.navButton} onClick={() => setActiveSection("about")}>Om mig</button></li>

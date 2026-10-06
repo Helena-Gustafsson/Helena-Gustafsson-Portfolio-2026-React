@@ -22,13 +22,14 @@
   --section-padding: 4rem 2rem;
 
   /* Gradient */
-  --neon-gradient: linear-gradient(
+  --neon-gradient-border: linear-gradient(
     135deg,
     var(--neon-turquoise),
     var(--neon-purple),
     var(--neon-pink),
     var(--neon-orange)
   );
+
 }
 
 * {
@@ -53,8 +54,14 @@ h6 {
   font-family: var(--font-aclonica);
 }
 
-h1, h2 {
+h1 {
   margin: 2rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center; 
 }
 
 a {
