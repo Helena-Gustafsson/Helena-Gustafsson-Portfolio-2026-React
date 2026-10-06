@@ -5,10 +5,12 @@ import About from "./sections/About";
 import FrontendProfile from "./sections/FrontendProfile"; 
 import LIA from "./sections/LIA"; import Projects from "./sections/Projects"; 
 import CV from "./sections/CV"; import Contact from "./sections/Contact"; 
-function App() 
-{ const [activeSection, setActiveSection] = useState("home"); 
-  return 
-  ( <> <Navbar /> 
+function App() { 
+  
+  const [activeSection, setActiveSection] = useState("home"); 
+  return ( 
+  <> 
+  <Navbar setActiveSection={setActiveSection} />
   <h1>Helena Gustafsson</h1>
   {activeSection === "home" && <Home />} 
   {activeSection === "about" && <About />} 

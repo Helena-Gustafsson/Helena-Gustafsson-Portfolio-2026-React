@@ -1,14 +1,20 @@
 //NAVBAR AS PLACEHOLDER - TO BE CHANGED
 
-function Navbar() { 
+type NavbarProps = {
+    setActiveSection: (section: string) => void;
+};
+
+function Navbar({ setActiveSection }: NavbarProps) {
     return (
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#frontend-profile">Frontend Profile</a></li>
-                <li><a href="#lia">LIA</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><button onClick={() => setActiveSection("home")}>Hem</button></li>
+                <li><button onClick={() => setActiveSection("about")}>Om mig</button></li>
+                <li><button onClick={() => setActiveSection("frontend")}>Frontend Profile</button></li>
+                <li><button onClick={() => setActiveSection("projects")}>Projekt</button></li>
+                <li><button onClick={() => setActiveSection("cv")}>CV</button></li>
+                <li><button onClick={() => setActiveSection("lia")}>LIA</button></li>
+                <li><button onClick={() => setActiveSection("contact")}>Kontakt</button></li>
             </ul>
         </nav>
     );
