@@ -1,4 +1,5 @@
 import type { ProjectType } from '../types/ProjectType';
+import styles from '../styles/ProjectCard.module.css';
 
 type ProjectCardProps = {
   project: ProjectType;
@@ -6,7 +7,7 @@ type ProjectCardProps = {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article>
+    <article className={styles.projectCard}>
       <img src={project.image} alt={project.title} />
       <h3>{project.title}</h3>
       <p>{project.date}</p>
