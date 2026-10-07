@@ -3,6 +3,7 @@
 :root {
   /* Färger */
   --color-bg: #0b0d10;
+  --nav-outer-bg: rgba(255, 255, 255, 0.05);
   --color-text: #ffffff;
   --color-text-soft: #d0d0d0;
 
@@ -38,11 +39,11 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-stack);
-  min-height: 100vh;
+body { 
+    background: #121213; 
+    color: var(--color-text); 
+    font-family: var(--font-stack); 
+    min-height: 100vh; 
 }
 
 h1,
@@ -56,6 +57,7 @@ h6 {
 
 h1 {
   margin: 2rem;
+  text-align: center;
   font-size: 3rem;
 }
 
@@ -71,4 +73,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+.pageContainer { 
+    max-width: var(--max-width); 
+    margin: 0 auto; background-color: 
+    var(--color-bg); min-height: 100vh; 
 }

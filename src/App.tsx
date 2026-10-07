@@ -12,14 +12,15 @@ function App() {
   
   const [activeSection, setActiveSection] = useState("home"); 
   return ( 
-  <> 
+  <main className="pageContainer">
   <Navbar setActiveSection={setActiveSection} />
   <h1>Helena Gustafsson</h1>
   {activeSection === "home" && <Home />} 
   {activeSection === "about" && <About />} 
   {activeSection === "frontend" && <FrontendProfile />} 
   {activeSection === "lia" && <LIA />} {activeSection === "projects" && <Projects />} 
-  {activeSection === "cv" && <CV />} {activeSection === "contact" && <Contact />} </> 
+  {activeSection === "cv" && <CV />} {activeSection === "contact" && <Contact />} 
+  </main> 
   ); 
 } 
 export default App;

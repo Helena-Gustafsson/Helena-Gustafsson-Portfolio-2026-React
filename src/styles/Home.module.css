@@ -1,11 +1,19 @@
 .creativeImageContainer {
-  width: 50%;
+  margin-top: 3rem;
+  width: 70%;
   height: auto;
 }
 
 img {
-  width: 80%;
+  width: 90%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10px;  
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.title {
+  margin-top: 3rem;
+  text-align: center;
 }

@@ -1,6 +1,6 @@
 .neonFrame { 
     padding: 2rem; 
-    border: 3px solid transparent; 
+    border: 2px solid transparent; 
     border-radius: 24px; 
     background: linear-gradient(var(--color-bg), var(--color-bg)) 
     padding-box, 
