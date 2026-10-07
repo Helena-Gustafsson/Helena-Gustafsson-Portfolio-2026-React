@@ -116,3 +116,5 @@ export const projectData: ProjectType[] = [
       'https://helena-gustafsson.github.io/FED25D-HTML-CSS-inl-1-portfolio-Helena-Gustafsson',
   },
 ];
+
+export default projectData;
