@@ -8,8 +8,9 @@ type ProjectCardProps = {
 function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className={styles.projectCard}>
-      <img src={project.image} alt={project.title} />
+      
       <h3>{project.title}</h3>
+      <img src={project.image} alt={project.title} />
       <p>{project.date}</p>
       <p>{project.projectType}</p>
       <p>{project.description}</p>
