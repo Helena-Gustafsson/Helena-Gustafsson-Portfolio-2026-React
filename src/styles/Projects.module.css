@@ -19,10 +19,14 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 930px) {
-  .projectLayout {
+    
+    .projectLayout {                
+    grid-template-columns: repeat(2, 1fr); 
+    }
+    .projectLayout {
     article:first-child {
     grid-column: span 2;
-  }
+    }
   }
 }
 
