@@ -1,8 +1,7 @@
 import type { ProjectType } from '../types/ProjectType';
 
-export const projectData: ProjectType[] = [
+export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
   {
-    id: 1,
     title: 'Bookworm',
     projectType: 'group',
     date: 'September 2026',
@@ -16,7 +15,6 @@ export const projectData: ProjectType[] = [
   },
 
   {
-    id: 2,
     title: 'API Project - Express & SQL',
     projectType: 'individual',
     date: 'June 2026',
@@ -40,7 +38,6 @@ export const projectData: ProjectType[] = [
     projectUrl: '/pdfs/api-project-readme.pdf',
   },
   {
-    id: 3,
     title: 'Negative Space',
     projectType: 'group',
     date: 'May 2026',
@@ -65,7 +62,6 @@ export const projectData: ProjectType[] = [
       'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-negative-space',
   },
   {
-    id: 4,
     title: 'UX Review - Accessibility Analysis',
     projectType: 'individual',
     date: 'April 2026',
@@ -86,7 +82,6 @@ export const projectData: ProjectType[] = [
     projectUrl: '/pdfs/ux-review.pdf',
   },
   {
-    id: 5,
     title: 'Rädda Solen',
     projectType: 'group',
     date: 'Februari-March 2026',
@@ -110,7 +105,6 @@ export const projectData: ProjectType[] = [
       'https://helena-gustafsson.github.io/FED2025D_grupparbete_spel_radda_solen/',
   },
   {
-    id: 6,
     title: 'Budget App',
     projectType: 'individual',
     date: 'Februari 2026',
@@ -134,7 +128,6 @@ export const projectData: ProjectType[] = [
       'https://medieinstitutet.github.io/fed25d-js-inl-2-budget-app-Helena-Gustafsson',
   },
   {
-    id: 7,
     title: 'Munkshoppen',
     projectType: 'individual',
     date: 'Januari 2026',
@@ -157,7 +150,6 @@ export const projectData: ProjectType[] = [
       'https://helena-gustafsson.github.io/FED25D-inl-1-JS-Munkshoppen/',
   },
   {
-    id: 8,
     title: 'Portfolio - HTML/CSS',
     projectType: 'individual',
     date: 'December 2025',
@@ -180,7 +172,6 @@ export const projectData: ProjectType[] = [
       'https://helena-gustafsson.github.io/FED25D-HTML-CSS-inl-1-portfolio-Helena-Gustafsson',
   },
   {
-    id: 9,
     title: "Helena's Katthem",
     projectType: 'individual',
     date: 'Augusti 2025',
@@ -195,4 +186,9 @@ export const projectData: ProjectType[] = [
   },
 ];
 
-export default projectData;
+export const projectData: ProjectType[] = projectDataWithoutId.map(
+  (project, indexId) => ({
+    ...project,
+    id: indexId + 1, // indexId 0 blir ID 1, indexId 1 blir ID 2, osv.
+  }),
+);
