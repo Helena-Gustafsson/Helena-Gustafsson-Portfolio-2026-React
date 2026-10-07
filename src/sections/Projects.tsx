@@ -1,6 +1,7 @@
 import {projectData} from '../data/projectData';
 import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/Projects.module.css';
+import NeonFrame from '../components/NeonFrame';
 
 function Projects() {
     return (
@@ -9,10 +10,11 @@ function Projects() {
 
             <div className={styles.projectLayout}> 
                 {projectData.map((project) => ( 
+                    <NeonFrame key={project.id}>
                     <ProjectCard 
                     key={project.id} 
-                    project={project} 
-                    />
+                    project={project} />
+                    </NeonFrame>
                 ))} 
             </div> 
         </section>
