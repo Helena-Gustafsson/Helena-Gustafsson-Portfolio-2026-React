@@ -1,9 +1,12 @@
-function Home() {
-    return (
-        <div>
-            <h2>Home</h2>
-        </div>
-    );
-}
+import CreativeImage from '../components/CreativeImage';
+import styles from '../styles/Home.module.css';
+
+function Home() { 
+    return ( 
+    <div className={styles.creativeImageContainer}> 
+    <CreativeImage /> 
+    </div> 
+    ); 
+} 
 
 export default Home;

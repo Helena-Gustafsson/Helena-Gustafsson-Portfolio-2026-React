@@ -1,0 +1,11 @@
+.creativeImageContainer {
+  width: 50%;
+  height: auto;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
