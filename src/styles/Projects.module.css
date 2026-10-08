@@ -16,10 +16,53 @@
   padding: 2rem;
 }
 
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;      /* Gör att knapparna hoppar ner på nästa rad om skärmen är liten */
+  gap: 16px;            /* Skapar ett ordentligt och snyggt mellanrum mellan knapparna */
+  justify-content: center; /* Centrerar raden med badges (valfritt, ta bort om du vill ha dem till vänster) */
+  margin-top: 3rem;     /* Skapar avstånd upp till dina projektkort */
+  margin-bottom: 3rem;  /* Skapar avstånd ner till dina projektkort */
+  padding: 10px;
+  align-items: flex-end; /* Justerar knapparna till botten av raden */
+}
+
+/* Själva knapparna som bilderna ligger i */
+.filterButton {
+  background: none;     /* Tar bort knappens gråa standardbakgrund */
+  border: none;         /* Tar bort den fula standardramen runt knappar */
+  padding: 0;           /* Tar bort standard-padding */
+  cursor: pointer;      /* Gör att muspekaren blir en hand när man hovrar */
+  display: flex;        /* Hjälper till att centrera bilden inuti */
+  align-items: center;
+  flex-shrink: 0;
+  min-width: max-content; 
+  transition: transform 0.2s ease; /* Gör att hover-effekten blir mjuk */
+}
+
+/* Gör att badgen växer lite subtilt när man håller muspekaren över den */
+.filterButton:hover {
+  transform: scale(1.08);
+}
+
+/* Stylar själva SVG-bilderna inuti knapparna */
+.badgeImage {
+  height: 28px;         /* Sätter en fast och bra höjd för alla badges */
+  width: auto;          /* Låter bredden anpassa sig efter höjden automatiskt */
+  display: block;
+  object-fit: contain;  /* Säkerställer att bilderna inte trycks ihop eller stretchas ut */
+  margin: 0;      
+}
+
+.filterButton:first-child .badgeImage {
+  height: 35px; 
+  border-radius: 30px;
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 930px) {
-    
+
     .projectLayout {                
     grid-template-columns: repeat(2, 1fr); 
     }
