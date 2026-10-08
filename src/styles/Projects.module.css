@@ -1,12 +1,13 @@
 /* 
   PROJEKTGRID - SYMMETRIHANTERING
   -------------------------------------------------------------
-  - Just nu (9 projekt): Använd 'repeat(3, 1fr)' -> Ger 3 + 3 + 3 (Perfekt)
-  - Vid 10 projekt: Ändra till 'repeat(5, 1fr)'  -> Ger 5 + 5
-  - Vid 12 projekt: Ändra till 'repeat(4, 1fr)'  -> Ger 4 + 4 + 4
-  - kolla annnars på autfill med minmax
+  //Translate comments to English
+  - The project grid is designed to be symmetrical and visually appealing.
+  - Now 9 projects: Use 'repeat(3, 1fr)' -> Gives 3 + 3 + 3 (Perfect)
+  - At 10 projects: Change to 'repeat(5, 1fr)' -> Gives 5 + 5
+  - At 12 projects: Change to 'repeat(4, 1fr)' -> Gives 4 + 4 + 4
+  - Check out auto-fill with minmax
 */
-
 
 .projectLayout {
   display: grid;
@@ -16,41 +17,42 @@
   padding: 2rem;
 }
 
+
+/*CONTAINER FOR FILTER BUTTONS*/
 .filterContainer {
   display: flex;
-  flex-wrap: wrap;      /* Gör att knapparna hoppar ner på nästa rad om skärmen är liten */
-  gap: 16px;            /* Skapar ett ordentligt och snyggt mellanrum mellan knapparna */
-  justify-content: center; /* Centrerar raden med badges (valfritt, ta bort om du vill ha dem till vänster) */
-  margin-top: 3rem;     /* Skapar avstånd upp till dina projektkort */
-  margin-bottom: 3rem;  /* Skapar avstånd ner till dina projektkort */
+  flex-wrap: wrap;      
+  gap: 16px;            
+  justify-content: center; 
+  margin-top: 3rem;     
+  margin-bottom: 3rem;  
   padding: 10px;
-  align-items: flex-end; /* Justerar knapparna till botten av raden */
+  align-items: flex-end; 
 }
 
-/* Själva knapparna som bilderna ligger i */
+/*FILTERBUTTONS CONTAINING SVG BADGE IMAGES*/
 .filterButton {
-  background: none;     /* Tar bort knappens gråa standardbakgrund */
-  border: none;         /* Tar bort den fula standardramen runt knappar */
-  padding: 0;           /* Tar bort standard-padding */
-  cursor: pointer;      /* Gör att muspekaren blir en hand när man hovrar */
-  display: flex;        /* Hjälper till att centrera bilden inuti */
+  background: none;     
+  border: none;         
+  padding: 0;           
+  cursor: pointer;      
+  display: flex;        
   align-items: center;
   flex-shrink: 0;
   min-width: max-content; 
-  transition: transform 0.2s ease; /* Gör att hover-effekten blir mjuk */
+  transition: transform 0.2s ease; 
 }
 
-/* Gör att badgen växer lite subtilt när man håller muspekaren över den */
 .filterButton:hover {
   transform: scale(1.08);
 }
 
-/* Stylar själva SVG-bilderna inuti knapparna */
+/* STYLING FOR THE BADGE IMAGES */
 .badgeImage {
-  height: 28px;         /* Sätter en fast och bra höjd för alla badges */
-  width: auto;          /* Låter bredden anpassa sig efter höjden automatiskt */
+  height: 28px;         
+  width: auto;          
   display: block;
-  object-fit: contain;  /* Säkerställer att bilderna inte trycks ihop eller stretchas ut */
+  object-fit: contain;  
   margin: 0;      
 }
 
