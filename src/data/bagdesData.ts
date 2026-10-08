@@ -51,7 +51,7 @@ export const badgeMap: BadgeMapType = {
 
   Insomnia: '/badges/Insomnia.svg',
 
-  'Beekeeper Studio': '/badges/beekeper.svg',
+  'Beekeeper Studio': 'public/badges/beekeeper.svg',
 
   GitHub: '/badges/github.svg',
 };

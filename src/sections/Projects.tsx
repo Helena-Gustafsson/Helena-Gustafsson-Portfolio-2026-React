@@ -5,6 +5,8 @@ import NeonFrame from '../components/NeonFrame';
 import { badgeMap } from '../data/bagdesData';
 import { useState } from 'react';
 
+
+/*FILTER TAGS - BADGES*/
 const filterTags = [
   'Alla',
   'TypeScript',
@@ -21,6 +23,7 @@ const filterTags = [
 
 function Projects() {
 
+    /*USESTATE FOR SELECTED TAGS AND HANDLE CLICKS*/
     const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
     const handleTagClick = (tag: string) => {
@@ -40,15 +43,28 @@ function Projects() {
         }
     };
 
+    /*FILTER PROJECTS BASED ON SELECTED TAGS*/
+    const filteredProjects = selectedTags.length === 0 
+        ? projectData 
+        : projectData.filter((project) => {
+            const matchingTags = project.tags.filter((tag) => 
+                selectedTags.includes(tag));
+            return matchingTags.length > 0;
+        }
+    );
+
     return (
         <section> 
             <h2>Projekt</h2> 
+            <p className={styles.projectIntroText}>Här är projekt som jag har arbetat med under min utbildning som del av mina inlämningsuppgifter.</p>
 
             <div className={styles.filterContainer}>
                 {filterTags.map((tag) => {
                     const svgBadgePath = badgeMap[tag];
 
-                    const isBadgeSelected = selectedTags.includes(tag);
+                    const isBadgeSelected = tag === 'Alla' 
+                    ? selectedTags.length === 0 
+                    : selectedTags.includes(tag);
                     
                     return (
                         <button 
@@ -65,7 +81,7 @@ function Projects() {
             </div>
 
             <div className={styles.projectLayout}> 
-                {projectData.map((project) => ( 
+                {filteredProjects.map((project) => ( 
                     <NeonFrame key={project.id}>
                         <ProjectCard project={project} />
                     </NeonFrame>
