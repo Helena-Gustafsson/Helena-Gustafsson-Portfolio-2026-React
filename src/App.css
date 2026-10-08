@@ -18,10 +18,6 @@
   --font-stack: "Inter", "Segoe UI", sans-serif;
   --font-aclonica: "Aclonica", sans-serif;
 
-  /* Layout */
-  --max-width: 1200px;
-  --section-padding: 4rem 2rem;
-
   /* Gradient */
   --neon-gradient-border: linear-gradient(
     135deg,
@@ -30,6 +26,10 @@
     var(--neon-pink),
     var(--neon-orange)
   );
+
+   /* Layout */
+  --max-width: 1400px;
+  --section-padding: 4rem 2rem;
 
 }
 

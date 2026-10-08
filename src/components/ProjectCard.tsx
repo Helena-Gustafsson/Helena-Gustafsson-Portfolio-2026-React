@@ -28,7 +28,7 @@ function ProjectCard({ project }: ProjectCardProps) {
       </ul>
 
       <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
-        View Project
+        <strong>Visa Projekt</strong>
       </a>
     </article>
   );

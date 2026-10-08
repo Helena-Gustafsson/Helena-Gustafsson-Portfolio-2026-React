@@ -7,7 +7,7 @@ function Home() {
     <div className={styles.creativeImageContainer}> 
     <CreativeImage /> 
     </div> 
-    <h2 className={styles.title}>Frontend Developer  |  Creative Designer </h2>
+    <h3 className={styles.title}>Frontend Developer  |  Creative Designer | UX/UI</h3>
     </> 
     ); 
 } 

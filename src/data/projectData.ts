@@ -15,9 +15,9 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
   },
 
   {
-    title: 'API Project - Express & SQL',
+    title: 'API Projekt - Express & SQL',
     projectType: 'individual',
-    date: 'June 2026',
+    date: 'Juni 2026',
     description:
       'Ett robust backend REST API byggt med TypeScript, Express och MySQL för en musikshop, med full CRUD-funktionalitet och en 3NF-normaliserad databasstruktur.',
     details:
@@ -40,7 +40,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
   {
     title: 'Negative Space',
     projectType: 'group',
-    date: 'May 2026',
+    date: 'Maj 2026',
     description:
       'En responsiv och tematiskt genomarbetad lanseringssida för rymdspelet Negative Space, byggd utifrån en tilldelad designskiss.',
     details:
@@ -62,7 +62,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
       'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-negative-space',
   },
   {
-    title: 'UX Review - Accessibility Analysis',
+    title: 'UX Analys',
     projectType: 'individual',
     date: 'April 2026',
     description:
@@ -84,7 +84,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
   {
     title: 'Rädda Solen',
     projectType: 'group',
-    date: 'Februari-March 2026',
+    date: 'Feb/Mars 2026',
     description:
       "Ett rymdbaserat 'escape room'-webbspel utvecklat i team, där spelaren löser unika minispel på varje planet för att rädda solsystemet.",
     details:

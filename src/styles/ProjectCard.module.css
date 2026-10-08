@@ -1,3 +1,7 @@
+.projectType { 
+    white-space: nowrap; 
+}
+
 .projectType img { 
     height: 30px; 
     width: auto; 
@@ -10,10 +14,9 @@
 .projectDateType { 
     display: flex; 
     align-items: center; 
-    justify-content: 
-    space-between; gap: 
-    1rem; 
+    gap: 1rem; 
     margin-bottom: 1rem; 
+    margin-top: 1rem;
 }
 
 /* MEDIA QUERIES */
