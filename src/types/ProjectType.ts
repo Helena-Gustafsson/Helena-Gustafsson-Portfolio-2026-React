@@ -6,6 +6,6 @@ export type ProjectType = {
   description: string;
   details?: string;
   image: string;
-  technologies: string[];
+  tags: string[];
   projectUrl: string;
 };

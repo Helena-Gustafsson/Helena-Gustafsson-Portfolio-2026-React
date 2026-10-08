@@ -22,8 +22,8 @@ function ProjectCard({ project }: ProjectCardProps) {
       <p>{project.description}</p>
       
       <ul>
-        {project.technologies.map((technology) => (
-          <li key={technology}>{technology}</li>
+        {project.tags.map((technologyTag) => (
+          <li key={technologyTag}>{technologyTag}</li>
         ))}
       </ul>
 
