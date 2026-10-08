@@ -47,6 +47,12 @@
   transform: scale(1.08);
 }
 
+.selectedButton {
+  border-color: var(--neon-turquoise);
+  filter: drop-shadow(0 0 10px var(--neon-gold));
+  transform: scale(1.05); /* Gör knappen ett filter-snäpp större */
+}
+
 /* STYLING FOR THE BADGE IMAGES */
 .badgeImage {
   height: 28px;         
