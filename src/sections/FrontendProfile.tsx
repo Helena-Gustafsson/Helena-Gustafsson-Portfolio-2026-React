@@ -1,8 +1,16 @@
+import NeonFrame from '../components/NeonFrame';
+import styles from '../styles/FrontendProfile.module.css';
+
 function FrontendProfile() {
     return (
-        <div>
+        <section className={styles.frontendProfileSection}>
             <h2>Frontend Profile</h2>
-        </div>
+                <div className={styles.frontendProfileContainer}>
+                    <NeonFrame> 
+                        <p>Frontend skills and experience</p> 
+                    </NeonFrame>
+                </div>
+        </section>
     );
 }
 

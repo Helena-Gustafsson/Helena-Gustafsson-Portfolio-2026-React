@@ -1,0 +1,18 @@
+.liaContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.liaImage {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}

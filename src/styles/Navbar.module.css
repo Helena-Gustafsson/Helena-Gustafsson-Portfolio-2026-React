@@ -29,7 +29,8 @@
 }
 
 .navButton:active { 
-    transform: scale(0.95); 
+    transform: scale(1.2); 
+    transition: transform 1s ease-in-out;
 }
 
 .menuButton { 

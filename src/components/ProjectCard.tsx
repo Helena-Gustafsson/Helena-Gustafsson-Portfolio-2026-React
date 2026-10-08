@@ -11,7 +11,7 @@ function ProjectCard({ project }: ProjectCardProps) {
     <article className={styles.projectCard}>
       
       <h3>{project.title}</h3>
-      <img src={project.image} alt={project.title} />
+      <img className={styles.projectImage} src={project.image} alt={project.title} />
       <div className={styles.projectDateType}>
         <p>{project.date}</p>
         <p className={styles.projectType}> {project.projectType === "individual" ? 

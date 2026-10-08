@@ -45,10 +45,34 @@
   border-radius: 10px;
 }
 
+.projectImage {
+  height:200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;  
+  margin-left: 1%;
+  margin-top: 5%;
+}
+
+
 /* MEDIA QUERIES */
-@media (max-width: 600px) {
+
+@media (max-width: 910px) {
+    .projectImage {
+        height: 150px;
+        width: auto;
+    }
+}
+
+@media (max-width: 750px) {
     .projectDateType { 
         flex-direction: column; 
         align-items: flex-start; 
+    }
+}
+
+@media (max-width: 360px) {
+    .neonFrame {
+        padding: 0.5rem;
     }
 }

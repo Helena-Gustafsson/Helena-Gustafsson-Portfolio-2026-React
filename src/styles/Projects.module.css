@@ -69,8 +69,9 @@
   margin: 0;      
 }
 
+/*ALL FILTER BUTTON*/
 .filterButton:first-child .badgeImage {
-  height: 35px; 
+  height: 32px; 
   border-radius: 30px;
 }
 
