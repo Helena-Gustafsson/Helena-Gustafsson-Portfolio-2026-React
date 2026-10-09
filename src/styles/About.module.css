@@ -1,6 +1,8 @@
 .aboutContainer {
     display: flex;
-    margin-inline: 5%;
+    justify-content: center;
+    max-width: 1200px;
+    margin-inline: 10%;
     margin-top: 2rem;
 }
 
@@ -19,8 +21,19 @@
   object-fit: cover; 
 }
 
+.aboutTitle
+{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.aboutText{
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 /* MEDIA QUERIES */
-@media (max-width: 768px) {
+@media (max-width: 910px) {
   .aboutContent {
     flex-direction: column; 
     text-align: center; 
@@ -30,4 +43,12 @@
     max-width: 100%;
     height: auto; 
   }
+
+    .aboutTitle {
+        font-size: 1.3rem;
+    }
+
+    .aboutText {
+        font-size: 1rem;
+    }
 }
