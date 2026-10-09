@@ -5,6 +5,7 @@
 }
 
 .aboutContent {
+    display: flex;
     flex-direction: row;
     flex: start;
     gap: 20px;
