@@ -29,7 +29,6 @@
 
    /* Layout */
   --max-width: 1500px;
-  --section-padding: 4rem 2rem;
 
 }
 
@@ -84,5 +83,5 @@ ul {
     max-width: var(--max-width); 
     margin: 0 auto; background-color: 
     var(--color-bg); min-height: 100vh; 
-    padding: var(--section-padding);
+    padding-top: 2rem;
 }
