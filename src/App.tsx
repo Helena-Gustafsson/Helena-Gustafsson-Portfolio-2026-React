@@ -22,8 +22,10 @@ function App() {
     {activeSection === "home" && <Home />} 
     {activeSection === "about" && <About />} 
     {activeSection === "frontend" && <FrontendProfile />} 
-    {activeSection === "lia" && <LIA />} {activeSection === "projects" && <Projects />} 
-    {activeSection === "cv" && <CV />} {activeSection === "contact" && <Contact />} 
+    {activeSection === "lia" && <LIA />} 
+    {activeSection === "projects" && <Projects />} 
+    {activeSection === "cv" && <CV />} 
+    {activeSection === "contact" && <Contact />} 
 
   </main> 
   </>

@@ -1,14 +1,14 @@
 .aboutContainer {
     display: flex;
     margin-inline: 5%;
+    margin-top: 2rem;
 }
 
 .aboutContent {
     flex-direction: row;
-    justify-content: center;
+    flex: start;
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap;
 }
 
 .profileImage {
