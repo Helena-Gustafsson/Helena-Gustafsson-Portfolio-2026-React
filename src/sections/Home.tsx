@@ -7,7 +7,12 @@ function Home() {
     <div className={styles.creativeImageContainer}> 
     <CreativeImage /> 
     </div> 
-    <h3 className={styles.title}>Frontend Developer  |  Creative Designer | UX/UI</h3>
+    <div className={styles.titleDescriptionContainer}>
+        <span>Frontend Developer</span>
+        <span>Creative Designer</span>
+        <span>UX / UI</span>
+    </div>
+    
     </> 
     ); 
 } 

@@ -17,3 +17,42 @@ img {
   margin-top: 3rem;
   text-align: center;
 }
+
+
+.titleDescriptionContainer {
+    flex-direction: row; 
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 2rem;
+    font-family : var(--font-aclonica);
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 730px) {
+
+    .titleDescriptionContainer {
+    margin-top: 2rem;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .titleDescriptionContainer span {
+        display: block;
+        color: var(--bg-color);
+        margin-bottom: 1rem;
+    }
+}
+
+/*ADDING A VERTICAL LINE BETWEEN THE SPAN ELEMENTS.*/
+@media (min-width: 731px) {
+    .titleDescriptionContainer span:not(:last-child)::after {
+        content: "|";
+        margin: 0 15px;
+        color: var(--text-color);
+    }
+}
