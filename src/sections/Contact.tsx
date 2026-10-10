@@ -1,22 +1,27 @@
 import NeonFrame from "../components/NeonFrame";
+import styles from "./Contact.module.css";
 
 function Contact() {
     return (
         <div>
             <h2>Kontakt</h2>
 
-            <div className="contact-container">
+            <div className={styles.contactContainer}>
                 <NeonFrame>
-                    <form className="contact-form" action="https://formspree.io/f/mnqvzyqk" method="POST">
-                        <div className="form-input">
+                    <form className={styles.contactForm} action="https://formspree.io/f/mnqvzyqk" method="POST">
+                        <div className={styles.formInput}>
                             <label htmlFor="name">Namn</label>
                             <input type="text" id="name" name="name" required />
                         </div>
-                        <div className="form-input">
+                        <div className={styles.formInput}>
                             <label htmlFor="email">E-post</label>
                             <input type="email" id="email" name="email" required />
                         </div>
-                        <div className="form-input">
+                        <div className={styles.formInput}>
+                            <label htmlFor="subject">Ämne</label>
+                            <input type="text" id="subject" name="subject" required />
+                        </div>
+                        <div className={styles.formInput}>
                             <label htmlFor="message">Meddelande</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
@@ -24,7 +29,7 @@ function Contact() {
                     </form>
                 </NeonFrame>
 
-                <div className="contact-info">
+                <div className={styles.contactInfo}>
                     <h3>Kontakta mig!</h3>
                     <a href="mailto:helena.gustafsson.work@gmail.com">
                     <img src="public/contact-icons/email-address-svgrepo-com.svg" alt="Email Icon" />
