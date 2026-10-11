@@ -1,5 +1,6 @@
 import NeonFrame from "../components/NeonFrame";
 import styles from "../styles/Contact.module.css";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
     return (

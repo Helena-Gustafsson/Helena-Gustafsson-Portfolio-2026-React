@@ -1,5 +1,6 @@
 import type { ContactFormType } from "../types/ContactFormType";
 import { useState, useEffect, type ChangeEvent, type SubmitEvent } from "react";
+import styles from "../styles/ContactForm.module.css";
 
 //"" means that all fileds are empty when the form is first loaded.
 const initialFormData: ContactFormType = { 
@@ -10,7 +11,7 @@ const initialFormData: ContactFormType = {
     message: "", 
 };
 
-//? means that the field is optional. Error for mandatory fields are 
+//? means that the field is optional. Error for mandatory fields are handled in validation logic in handleSubmit function.
 type Errors = { 
     name?: string; 
     email?: string; 
@@ -27,6 +28,7 @@ const [isSubmitted, setIsSubmitted] = useState(false);
 const [isFormErrorVisible, setIsFormErrorVisible] = useState(false);
 const [isSuccessVisible, setIsSuccessVisible] = useState(false);
 
+// useEffect timer to hide the error and success messages after 4 seconds
 useEffect(() => {
   if (isFormErrorVisible || isSuccessVisible) {
     const timer = setTimeout(() => {
@@ -82,32 +84,60 @@ const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
       <p>Fyll i formuläret nedan för att skicka ett meddelande. Alla fält är obligatoriska.</p>
 
       {isSuccessVisible && (
-        <p className="success">Meddelandet har skickats!</p>
+        <p className={styles.success}>Meddelandet har skickats!</p>
       )}
       {isFormErrorVisible && (
-    <p className="error">Vänligen fyll i alla obligatoriska fält.</p>
+    <p className={styles.error}>Vänligen fyll i alla obligatoriska fält.</p>
       )}
 
-      <label htmlFor="name">Name:</label>
-      <input id="name" type="text" name="name" value={formData.name} onChange={(e) => handleInputChange(e)}/>
-      {isSubmitted && errors.name && <p className="error">{errors.name}</p>}
+    <div className={styles.formInput}>
+      <label htmlFor="name">Namn:</label>
+      <input id="name" 
+      type="text" name="name" 
+      value={formData.name} 
+      placeholder="Ange ditt namn"
+      onChange={(e) => handleInputChange(e)}/>
+      {isSubmitted && errors.name && <p className={styles.error}>{errors.name}</p>}
+    </div>
 
-      <label htmlFor="email">Email:</label>
-      <input id="email" type="email" name="email" value={formData.email} onChange={(e) => handleInputChange(e)}/>
-      {isSubmitted && errors.email && <p className="error">{errors.email}</p>}
+    <div className={styles.formInput}>
+      <label htmlFor="email">E-post:</label>
+      <input id="email" 
+      type="email" name="email" 
+      placeholder="Ange din e-post"
+      value={formData.email} onChange={(e) => handleInputChange(e)}/>
+      {isSubmitted && errors.email && <p className={styles.error}>{errors.email}</p>}
+    </div>
 
-      <label htmlFor="phone">Phone:</label>
-      <input id="phone" type="text" name="phone" value={formData.phone} onChange={(e) => handleInputChange(e)}/>
-      {isSubmitted && errors.phone && <p className="error">{errors.phone}</p>}
+    <div className={styles.formInput}>
+      <label htmlFor="phone">Telefonnummer:</label>
+      <input id="phone" 
+      type="text" 
+      placeholder="Ange ditt telefonnummer"
+      name="phone" 
+      value={formData.phone} 
+      onChange={(e) => handleInputChange(e)}/>
+      {isSubmitted && errors.phone && <p className={styles.error}>{errors.phone}</p>}
+    </div>
 
-      <label htmlFor="subject">Subject:</label>
-      <input id="subject" type="text" name="subject" value={formData.subject} onChange={(e) => handleInputChange(e)}/>
-      {isSubmitted && errors.subject && <p className="error">{errors.subject}</p>}
+    <div className={styles.formInput}>
+      <label htmlFor="subject">Ämne:</label>
+      <input id="subject" 
+      type="text" 
+      placeholder="Välj ett ämne"
+      name="subject" value={formData.subject} onChange={(e) => handleInputChange(e)}/>
+      {isSubmitted && errors.subject && <p className={styles.error}>{errors.subject}</p>}
+    </div>
 
-      <label htmlFor="message">Message:</label>
-      <textarea id="message" name="message" value={formData.message} onChange={(e) => handleInputChange(e)}></textarea>
-      {isSubmitted && errors.message && <p className="error">{errors.message}</p>}
-
+    <div className={styles.formInput}>
+      <label htmlFor="message">Meddelande:</label>
+      <textarea id="message" 
+      placeholder="Skriv ditt meddelande här"
+      name="message" 
+      value={formData.message} 
+      onChange={(e) => handleInputChange(e)}></textarea>
+      {isSubmitted && errors.message && <p className={styles.error}>{errors.message}</p>}
+    </div>
       
       <button className="submit-button" type="submit">Skicka meddelande</button>
 
