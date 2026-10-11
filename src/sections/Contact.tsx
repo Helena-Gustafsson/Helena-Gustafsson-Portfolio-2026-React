@@ -9,25 +9,7 @@ function Contact() {
 
             <div className={styles.contactContainer}>
                 <NeonFrame>
-                    <form className={styles.contactForm} action="https://formspree.io/f/mnqvzyqk" method="POST">
-                        <div className={styles.formInput}>
-                            <label htmlFor="name">Namn</label>
-                            <input type="text" id="name" name="name" required />
-                        </div>
-                        <div className={styles.formInput}>
-                            <label htmlFor="email">E-post</label>
-                            <input type="email" id="email" name="email" required />
-                        </div>
-                        <div className={styles.formInput}>
-                            <label htmlFor="subject">Ämne</label>
-                            <input type="text" id="subject" name="subject" required />
-                        </div>
-                        <div className={styles.formInput}>
-                            <label htmlFor="message">Meddelande</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit">Skicka</button>
-                    </form>
+                    <ContactForm />
                 </NeonFrame>
 
                 <div className={styles.contactInfo}>
