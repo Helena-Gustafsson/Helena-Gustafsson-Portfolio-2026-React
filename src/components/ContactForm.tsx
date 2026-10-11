@@ -122,10 +122,18 @@ const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
 
     <div className={styles.formInput}>
       <label htmlFor="subject">Ämne:</label>
-      <input id="subject" 
-      type="text" 
-      placeholder="Välj ett ämne"
-      name="subject" value={formData.subject} onChange={(e) => handleInputChange(e)}/>
+      <select 
+        id="subject" 
+        name="subject" 
+        value={formData.subject} 
+        onChange={(e) => handleInputChange(e)} >
+        <option value="">Välj ämne</option> 
+        <option value="lia">LIA</option>
+        <option value="jobb">Jobbmöjlighet</option> 
+        <option value="projekt">Fråga om projekt</option> 
+        <option value="samarbete">Samarbete</option> 
+        <option value="ovrigt">Övrigt</option> 
+        </select>
       {isSubmitted && errors.subject && <p className={styles.error}>{errors.subject}</p>}
     </div>
 
