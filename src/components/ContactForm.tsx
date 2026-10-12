@@ -80,15 +80,8 @@ const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>Skicka meddelande</h3>
-      <p>Fyll i formuläret nedan för att skicka ett meddelande. Alla fält är obligatoriska.</p>
-
-      {isSuccessVisible && (
-        <p className={styles.success}>Meddelandet har skickats!</p>
-      )}
-      {isFormErrorVisible && (
-    <p className={styles.error}>Vänligen fyll i alla obligatoriska fält.</p>
-      )}
+      <h3 className={styles.formTitle}>Skicka meddelande</h3>
+      <p className={styles.formInfo}>Fyll i formuläret nedan för att skicka ett meddelande. Alla fält är obligatoriska.</p>
 
     <div className={styles.formInput}>
       <label htmlFor="name">Namn:</label>
@@ -147,7 +140,14 @@ const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
       {isSubmitted && errors.message && <p className={styles.error}>{errors.message}</p>}
     </div>
       
-      <button className="submit-button" type="submit">Skicka meddelande</button>
+      <button className={styles.submitButton} type="submit">Skicka meddelande</button>
+
+      {isSuccessVisible && (
+        <p className={styles.success}>Meddelandet har skickats!</p>
+      )}
+      {isFormErrorVisible && (
+    <p className={styles.error}>Vänligen fyll i alla obligatoriska fält.</p>
+      )}
 
     </form>
   )

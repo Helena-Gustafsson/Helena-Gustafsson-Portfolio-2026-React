@@ -1,3 +1,10 @@
+.contactContainer {
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
 .contactInfo {
   text-align: center;
   margin-top: 2rem;
@@ -29,4 +36,13 @@
   padding-box, var(--neon-gradient-border) 
   border-box;
   transform: scale(1.1);
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1200px) {
+  .contactContainer {
+    margin-inline: 5%;
+  }
+
+  
 }
