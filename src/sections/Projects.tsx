@@ -2,6 +2,7 @@ import {projectData} from '../data/projectData';
 import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/Projects.module.css';
 import NeonFrame from '../components/NeonFrame';
+import neonStyles from '../styles/NeonBorder.module.css';
 import { badgeMap } from '../data/bagdesData';
 import { useState } from 'react';
 
@@ -69,7 +70,8 @@ function Projects() {
                     return (
                         <button 
                             key={tag} 
-                            className={`${styles.filterButton} ${isBadgeSelected ? styles.selectedButton : ''}`} 
+                            className={`${styles.filterButton} ${isBadgeSelected 
+                                ? `${styles.selectedButton} ${neonStyles.neonBorder}` : ''}`} 
                             type="button"
                             onClick={() => handleTagClick(tag)} 
                         >

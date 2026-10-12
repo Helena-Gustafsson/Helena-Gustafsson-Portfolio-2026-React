@@ -56,12 +56,7 @@
 }
 
 .selectedButton {
-  border: 2px solid transparent;
   border-radius: 8px; 
-  background: linear-gradient(var(--color-bg), 
-  var(--color-bg)) 
-  padding-box, var(--neon-gradient-border) 
-  border-box;
   transform: scale(1.10); 
 }
 

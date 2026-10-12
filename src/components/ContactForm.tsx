@@ -1,6 +1,7 @@
 import type { ContactFormType } from "../types/ContactFormType";
 import { useState, useEffect, type ChangeEvent, type SubmitEvent } from "react";
 import styles from "../styles/ContactForm.module.css";
+import neonStyles from "../styles/NeonBorder.module.css";
 
 //"" means that all fileds are empty when the form is first loaded.
 const initialFormData: ContactFormType = { 
@@ -140,7 +141,7 @@ const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
       {isSubmitted && errors.message && <p className={styles.error}>{errors.message}</p>}
     </div>
       
-      <button className={styles.submitButton} type="submit">Skicka meddelande</button>
+      <button className={`${styles.submitButton} ${neonStyles.neonHover}`} type="submit">Skicka meddelande</button>
 
       {isSuccessVisible && (
         <p className={styles.success}>Meddelandet har skickats!</p>

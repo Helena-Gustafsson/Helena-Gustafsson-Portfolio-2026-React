@@ -70,6 +70,21 @@ button {
 }
 
 .submitButton {
+
+  .submitButton {
+  width: fit-content;
+  min-width: 180px;
+  height: 2rem;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
   width: fit-content;
   min-width: 180px;
   height: 2rem;
@@ -93,16 +108,5 @@ button {
   transition: all 0.2s ease;
 }
 
-.submitButton:hover {
-  color: var(--color-text);
 
-  border: 2px solid transparent;
-
-  background:
-    linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
-    var(--neon-gradient-border) border-box;
-
-  transform: scale(1.05);
-  transition: all 0.2s ease;
-}
 

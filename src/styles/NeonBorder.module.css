@@ -1,0 +1,19 @@
+.neonBorder {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+    var(--neon-gradient-border) border-box;
+}
+
+.neonHover {
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.neonHover:hover {
+  color: var(--color-text);
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+    var(--neon-gradient-border) border-box;
+  transform: scale(1.05);
+}
