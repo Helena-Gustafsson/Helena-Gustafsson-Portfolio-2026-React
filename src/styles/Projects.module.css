@@ -56,8 +56,13 @@
 }
 
 .selectedButton {
-  filter: drop-shadow(0 0 10px var(--neon-gold));
-  transform: scale(1.10); /* Gör knappen ett filter-snäpp större */
+  border: 2px solid transparent;
+  border-radius: 8px; 
+  background: linear-gradient(var(--color-bg), 
+  var(--color-bg)) 
+  padding-box, var(--neon-gradient-border) 
+  border-box;
+  transform: scale(1.10); 
 }
 
 /* STYLING FOR THE BADGE IMAGES */
@@ -72,7 +77,7 @@
 /*ALL FILTER BUTTON*/
 .filterButton:first-child .badgeImage {
   height: 32px; 
-  border-radius: 30px;
+  border-radius: 1px;
 }
 
 
