@@ -10,7 +10,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     details:
       'Focus on API integration, user interaction and modern frontend development.',
     image: 'public/projekt-images/Bookwork.png',
-    tags: ['JavaScript', 'API', 'HTML', 'CSS'],
+    tags: ['TypeScript', 'JavaScript', 'API', 'HTML', 'CSS'],
     projectUrl: 'https://api-assignment-2-eta.vercel.app/index.html',
   },
 
@@ -48,7 +48,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
       'Detta projekt fokuserade på tvärfunktionellt samarbete och pixel-perfekt designimplementering. Som en del av utvecklingsteamet tog jag och min grupp emot en färdig designskiss från en designklass och omsatte den till en funktionell, responsiv onepager. Gränssnittet speglar spelets rymdtema genom kontraster, välbalanserade tomrum (negative space) och en mörkblå färgpalett med livfulla accentfärger. Teknologiskt strukturerades sidan med semantisk HTML5 och avancerad SCSS, där vi kombinerade CSS Grid och Flexbox för att skapa en helt sömlös responsivitet över mobil, surfplatta och desktop. Jag integrerade även JavaScript-logik för att hantera sidans interaktivitet, däribland en dynamisk förbeställnings-popup (Pre-order modal) med validerade inputfält och togglingsfunktioner. Kodbasen optimerades löpande med Vite, ESLint och Prettier för att bibehålla hög kodkvalitet och struktur, vilket verifierades med utmärkta resultat i Lighthouse-analyser för både desktop och mobil.',
     image: 'public/projekt-images/Negative_Space.png',
     tags: [
-      'HTML5',
+      'HTML',
       'SCSS',
       'JavaScript',
       'GitHub',
@@ -95,8 +95,8 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     tags: [
       'TypeScript',
       'JavaScript',
-      'HTML5',
-      'CSS3',
+      'HTML',
+      'CSS',
       'Vite',
       'LocalStorage',
       'SVG',
@@ -117,7 +117,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     image: 'public/projekt-images/budgetapp.png',
     tags: [
       'TypeScript',
-      'Sass',
+      'SCSS',
       'LocalStorage',
       'Web Accessibility',
       'GitHub',
@@ -140,9 +140,9 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     image: 'public/projekt-images/MunkShoppen.png',
     tags: [
       'JavaScript',
-      'Sass',
-      'HTML5',
-      'CSS3',
+      'SCSS',
+      'HTML',
+      'CSS',
       'GitHub',
       'Regex',
       'Vite',
@@ -161,8 +161,8 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
       'Detta projekt var den första examinationsuppgiften under utbildningen och fokuserade på att lägga grunden inom webbutveckling med ren HTML5 och CSS3. Sidan är uppbyggd med en strikt semantisk struktur bestående av header med navigation, en huvudsektion (main) för projektpresentationer, ett sidofält (aside) för kontaktuppgifter samt en tillhörande sidfot. Projektet inkluderar ett omfattande kontaktformulär med avancerade fälttyper som dropdown-menyer, kryssrutor och textareor, konfigurerat för att förhindra standard-skickning enligt specifikation. Gränssnittet utvecklades med ett sömlöst, responsivt flyt anpassat för mobil, surfplatta och desktop. Stort fokus lades på kodkvalitet och tillgänglighet, vilket resulterade i felfria valideringar hos W3C (både HTML och CSS) samt 100% i betyg på Chrome Lighthouse Accessibility-analys.',
     image: 'public/projekt-images/portfoliodec2026.png',
     tags: [
-      'HTML5',
-      'CSS3',
+      'HTML',
+      'CSS',
       'Web Accessibility',
       'Responsive Design',
       'Lighthouse',
@@ -181,7 +181,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     details:
       'Detta projekt skapades som examinationsprov under preparandkursen i webbutveckling, helt innan den ordinarie Frontend-utbildningen startade. Sidan är ett fiktivt katthem utvecklat med ren HTML5 och CSS3 för att visa förståelse för grundläggande layouttekniker och responsiv design. Gränssnittet anpassar sig för olika skärmstorlekar och innehåller ett sök- och filtreringsgränssnitt för att sortera katter baserat på kön och hårlängd. Att ha med detta projekt i min portfolio fungerar som en visuell tidslinje som tydligt demonstrerar min branta utvecklingskurva och mitt starka, inneboende driv för webbdesign och frontendutveckling redan innan mina akademiska studier påbörjades.',
     image: 'public/projekt-images/katthem.png',
-    tags: ['HTML5', 'CSS3', 'Responsive Design'],
+    tags: ['HTML', 'CSS', 'Responsive Design'],
     projectUrl:
       'https://helena-gustafsson.github.io/FED205D-Preparand-Kurs-Prov-Webutveckling-1---Helenas-Katthem-/',
   },
