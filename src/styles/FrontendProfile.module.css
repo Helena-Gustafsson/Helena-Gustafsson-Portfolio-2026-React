@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-inline: 50px  ;
 }
 
-.profileContainer {
+.frontendProfileContainer {
   width: 100%;
   max-width: 1000px; 
   margin: 0 auto;
@@ -28,4 +29,34 @@
 .textBlock p {
   line-height: 1.6;
   margin: 0;
+}
+
+/* MEDIA QUERIES FOR FRONTEND PROFILE */
+@media (max-width: 910px) {
+
+  .frontendProfileSection h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+.frontendProfileSection{
+    padding-inline: 20px;
+}
+
+.frontendProfileContainer {
+    padding-inline: 0;
+}
+
+div.neonFrame {
+    padding: 0.5rem;
+}
+
+  .textBlockTitle {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .textBlock {
+    margin-bottom: 1.5rem;
+  }
 }

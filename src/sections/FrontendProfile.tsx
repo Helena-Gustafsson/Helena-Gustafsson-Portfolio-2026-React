@@ -7,7 +7,7 @@ function FrontendProfile() {
             <h2>Frontend Profile</h2>
             
             <NeonFrame>
-                <div className={styles.profileContainer}>
+                <div className={styles.frontendProfileContainer}>
                     
                     <h3 className={styles.textBlockTitle}>Utbildning</h3>
                     <p className={styles.educationInfo}>
