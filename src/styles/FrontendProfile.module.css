@@ -1,10 +1,31 @@
-.frontendProfileContainer {
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+.frontendProfileSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileContainer {
+  width: 100%;
+  max-width: 1000px; 
+  margin: 0 auto;
+  padding-inline: 2.5rem;
+}
+
+.frontendProfileSection h2 {
+  margin-bottom: 2rem;     
+}
+
+.textBlockTitle {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.textBlock {
+  margin-bottom: 2.5rem;
+}
+
+.textBlock p {
+  line-height: 1.6;
+  margin: 0;
 }
