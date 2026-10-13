@@ -11,12 +11,12 @@ function ProjectCard({ project }: ProjectCardProps) {
     <article className={styles.projectCard}>
       
       <h3>{project.title}</h3>
-      <img className={styles.projectImage} src={project.image} alt={project.title} />
+      <img className={styles.projectImage} src={project.image} alt={project.title} loading="lazy" />
       <div className={styles.projectDateType}>
         <p>{project.date}</p>
         <p className={styles.projectType}> {project.projectType === "individual" ? 
-        ( <> <img src="public/Icon-individual.png" alt="Individual" /> Individuell uppgift </> ) : 
-        ( <> <img src="public/Icon-group.png" alt="Group" /> Gruppuppgift </> )} </p>
+        ( <> <img loading="lazy" src="public/Icon-individual.png" alt="Individual" /> Individuell uppgift </> ) : 
+        ( <> <img loading="lazy" src="public/Icon-group.png" alt="Group" /> Gruppuppgift </> )} </p>
       </div>
       <p><strong>Beskrivning:</strong> {project.description}</p>
       <p>{project.description}</p>
@@ -31,7 +31,7 @@ function ProjectCard({ project }: ProjectCardProps) {
           return (
             <div key={technologyTag} className={styles.badgeWrapper}>
               {svgBadgePath ? (
-                <img 
+                <img  loading="lazy"
                   src={svgBadgePath} 
                   alt={`${technologyTag} badge`} 
                   className={styles.badgeImage} 

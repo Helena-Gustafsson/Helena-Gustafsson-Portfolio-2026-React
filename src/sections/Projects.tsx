@@ -76,7 +76,7 @@ function Projects() {
                             onClick={() => handleTagClick(tag)} 
                         >
         
-                            <img src={svgBadgePath} alt={`${tag} badge`} className={styles.badgeImage} />
+                            <img src={svgBadgePath} alt={`${tag} badge`} className={styles.badgeImage} loading="lazy"/>
                         </button>
                     );
                 })}

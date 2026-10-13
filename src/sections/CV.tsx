@@ -24,11 +24,13 @@ function CV() {
             src="public/CV-HG-sid1.png" 
             alt="Helena Gustafsson CV Sida 1" 
             className={styles.cvImage}
+            loading="lazy"
           />
           <img 
             src="public/CV-HG-sid2.png" 
             alt="Helena Gustafsson CV Sida 2" 
             className={styles.cvImage}
+            loading="lazy"
           />
         </a>
         </div>

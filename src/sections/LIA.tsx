@@ -5,7 +5,7 @@ function LIA() {
 return (
     <div className={style.liaContainer}>
         <NeonFrame>
-            <img className={style.liaImage} src="public/Lia-poster.jpg" alt="LIA Poster" />
+            <img className={style.liaImage} src="public/Lia-poster.jpg" alt="LIA Poster" loading="lazy" />
         </NeonFrame>
     </div>
 );
