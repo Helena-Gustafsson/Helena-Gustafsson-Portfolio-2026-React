@@ -1,0 +1,43 @@
+.cvSection {
+  text-align: center;
+}
+
+.cvImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.openCV {
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.openCV:hover {
+  transform: scale(1.04);
+}
+
+.cvImage {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.imageLink {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}

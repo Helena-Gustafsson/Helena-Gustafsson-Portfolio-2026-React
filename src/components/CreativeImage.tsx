@@ -5,7 +5,7 @@ function CreativeImage() {
     return (
     <div className={styles.creativeImage}>
             <img className={neonStyles.neonBorder} src="/creative-image.png" alt="Creative Image" 
-            width="1208" height="839" loading="lazy" />
+            loading="lazy" width="1208" height="839" />
     </div>
     );
 }

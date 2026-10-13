@@ -1,36 +1,31 @@
 import styles from "../styles/CV.module.css";
+import neonStyles from "../styles/NeonBorder.module.css";
 
 function CV() {
   return (
     <section className={styles.cvSection}>
-      <h2>CV</h2>
 
       {/* OPEN PDF */}
-      <div className={styles.cvContent}>
-        <a
-        href="/CV.FED25.HelenaGustafsson.26.10.07.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.openButton}
-            >
-          📄 Klicka här för att se och ladda ner PDF
-        </a>
-      </div>
+      <a href="/CV FED25D (sv) Helena Gustafsson 2026.10.07.pdf" target="_blank" rel="noopener noreferrer">
+        <h2 className={`${styles.openCV} ${neonStyles.neonHover}`}>CV - Visa PDF</h2>
+      </a>
 
       {/* DISPLAY CV images */}
         <div className={styles.cvImageContainer}>
-     <a href="/Helena-Gustafsson-CV.pdf" target="_blank" rel="noopener noreferrer" className={styles.imageLink}>
+     <a href="/CV FED25D (sv) Helena Gustafsson 2026.10.07.pdf" target="_blank" rel="noopener noreferrer" className={styles.imageLink}>
           <img 
             src="/CV-HG-sid1.png" 
             alt="Helena Gustafsson CV Sida 1" 
-            className={styles.cvImage}
+            className= {`${styles.cvImage} ${neonStyles.neonBorder}`}
             loading="lazy"
             width="1414" height="2000"
           />
+      </a>
+      <a href="/CV FED25D (sv) Helena Gustafsson 2026.10.07.pdf" target="_blank" rel="noopener noreferrer" className={styles.imageLink}>
           <img 
             src="/CV-HG-sid2.png" 
             alt="Helena Gustafsson CV Sida 2" 
-            className={styles.cvImage}
+             className= {`${styles.cvImage} ${neonStyles.neonBorder}`}
             loading="lazy"
             width="1414" height="2000"
           />
