@@ -15,8 +15,10 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div className={styles.projectDateType}>
         <p>{project.date}</p>
         <p className={styles.projectType}> {project.projectType === "individual" ? 
-        ( <> <img loading="lazy" src="public/Icon-individual.png" alt="Individual" /> Individuell uppgift </> ) : 
-        ( <> <img loading="lazy" src="public/Icon-group.png" alt="Group" /> Gruppuppgift </> )} </p>
+        ( <> <img loading="lazy" height="632" width="526"
+          src="public/Icon-individual.png" alt="Individual" /> Individuell uppgift </> ) : 
+        ( <> <img loading="lazy" height="599" width="726" 
+          src="public/Icon-group.png" alt="Group" /> Gruppuppgift </> )} </p>
       </div>
       <p><strong>Beskrivning:</strong> {project.description}</p>
       <p>{project.description}</p>

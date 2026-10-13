@@ -1,4 +1,5 @@
-.neonBorder {
+.neonBorder,
+button.neonBorder {
   border: 2px solid transparent;
   background:
     linear-gradient(var(--color-bg), var(--color-bg)) padding-box,

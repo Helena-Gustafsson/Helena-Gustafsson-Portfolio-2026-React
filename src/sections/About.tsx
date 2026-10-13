@@ -11,7 +11,8 @@ function About() {
         <NeonFrame>
           <div className={styles.aboutContent}>
             <div className={styles.profileImageContainer}>
-              <img className={styles.profileImage} src="/Helena_profile_pic-dark-2026.08.11.png" alt="Helena Gustafsson" />
+              <img className={styles.profileImage} src="/Helena_profile_pic-dark-2026.08.11.png" alt="Helena Gustafsson" 
+              height="2568" width="1570" loading="lazy" />
             </div>
             <div className={styles.aboutTextContent}>
               <h3 className={styles.aboutTitle}>Vem är jag?</h3>

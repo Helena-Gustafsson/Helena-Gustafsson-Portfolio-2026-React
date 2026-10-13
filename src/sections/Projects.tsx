@@ -70,8 +70,7 @@ function Projects() {
                     return (
                         <button 
                             key={tag} 
-                            className={`${styles.filterButton} ${isBadgeSelected 
-                                ? `${styles.selectedButton} ${neonStyles.neonBorder}` : ''}`} 
+                            className={`${styles.filterButton} ${isBadgeSelected ? `${styles.selectedButton} ${neonStyles.neonBorder}` : ''}`} 
                             type="button"
                             onClick={() => handleTagClick(tag)} 
                         >

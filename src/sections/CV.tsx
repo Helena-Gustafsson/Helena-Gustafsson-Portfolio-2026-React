@@ -25,12 +25,14 @@ function CV() {
             alt="Helena Gustafsson CV Sida 1" 
             className={styles.cvImage}
             loading="lazy"
+            width="1414" height="2000"
           />
           <img 
             src="/CV-HG-sid2.png" 
             alt="Helena Gustafsson CV Sida 2" 
             className={styles.cvImage}
             loading="lazy"
+            width="1414" height="2000"
           />
         </a>
         </div>
