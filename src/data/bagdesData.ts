@@ -13,6 +13,7 @@ export const badgeMap: BadgeMapType = {
   HTML: '/badges/HTML.svg',
   CSS: '/badges/css.svg',
   SCSS: '/badges/scss.svg',
+  CSSModules: '/badges/cssModules.svg',
 
   API: '/badges/API.svg',
   Express: '/badges/express.svg',
@@ -36,16 +37,6 @@ export const badgeMap: BadgeMapType = {
   'Beekeeper Studio': '/badges/beekeeper.svg',
 
   GitHub: '/badges/github.svg',
-
-  'Node.js': '/badges/nodejs.svg',
-  Vite: '/badges/vite.svg',
-  Aiven: '/badges/aiven.svg',
-  dotenv: '/badges/dotenv.svg',
-
-  ESLint: '/badges/eslint.svg',
-  Prettier: '/badges/prettier.svg',
-
-  Lighthouse: '/badges/lighthouse.svg',
-
-  SVG: '/badges/svg.svg',
+  Vite: '/badges/Vite.svg',
+  WCAG: '/badges/WCAG.svg',
 };

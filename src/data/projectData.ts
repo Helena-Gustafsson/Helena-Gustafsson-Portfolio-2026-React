@@ -57,7 +57,6 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
       'CSS Grid',
       'Flexbox',
       'ESLint',
-      'Prettier',
     ],
     projectUrl:
       'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-negative-space',
@@ -73,8 +72,8 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     image: '/projekt-images/Pensionsmyndigheten.png',
     tags: [
       'UX/UI',
-      'WCAG 2.1',
-      'Web Accessibility',
+      'WCAG',
+      'Accessibility',
       'DOS-lagen',
       'Usability Testing',
       'Personas',
@@ -119,12 +118,11 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
       'TypeScript',
       'SCSS',
       'LocalStorage',
-      'Web Accessibility',
+      'Accessibility',
       'GitHub',
       'Vite',
       'Lighthouse',
       'ESLint',
-      'Prettier',
     ],
     projectUrl:
       'https://medieinstitutet.github.io/fed25d-js-inl-2-budget-app-Helena-Gustafsson',
@@ -163,11 +161,11 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     tags: [
       'HTML',
       'CSS',
-      'Web Accessibility',
+      'Accessibility',
       'Responsive Design',
+      'GitHub',
       'Lighthouse',
       'W3C Validator',
-      'GitHub',
     ],
     projectUrl:
       'https://helena-gustafsson.github.io/FED25D-HTML-CSS-inl-1-portfolio-Helena-Gustafsson',

@@ -38,10 +38,18 @@
 
 /* STYLING FOR TECHNOLOGY BADGES WITHOUT IMAGES */
 .fallbackText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 28px;
+
+  padding: 0 12px;
+
   font-size: 0.9rem;
-  color: var(--neon-gold, #ffd700); 
-  border: 1px solid rgba(255, 215, 0, 0.3);
-  padding: 4px 8px;
+
+  color: var(--neon-gold);
+  border: 2px solid rgba(255, 215, 0, 0.3);
   border-radius: 10px;
 }
 
