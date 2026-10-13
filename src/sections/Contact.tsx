@@ -21,17 +21,17 @@ function Contact() {
                     <div className={styles.contactIcons}>
 
                         <a href="mailto:helena.gustafsson.work@gmail.com">
-                        <img loading="lazy" src="public/contact-icons/email-address-svgrepo-com.svg" alt="Email Icon"
+                        <img loading="lazy" src="/contact-icons/email-address-svgrepo-com.svg" alt="Email Icon"
                         className={`${styles.contactIconImg} ${neonStyles.neonHover}`}  />
                         </a>
 
                         <a href="https://www.linkedin.com/in/helena-gustafsson-46926852/" target="_blank" rel="noopener noreferrer">
-                        <img loading="lazy" src="public/contact-icons/linkedin-svgrepo-com.svg" alt="LinkedIn Icon"
+                        <img loading="lazy" src="/contact-icons/linkedin-svgrepo-com.svg" alt="LinkedIn Icon"
                         className={`${styles.contactIconImg} ${neonStyles.neonHover}`}  />
                         </a>
 
                         <a href="https://github.com/Helena-Gustafsson" target="_blank" rel="noopener noreferrer">
-                        <img loading="lazy" src="public/contact-icons/github-svgrepo-com.svg" alt="GitHub Icon"
+                        <img loading="lazy" src="/contact-icons/github-svgrepo-com.svg" alt="GitHub Icon"
                         className={`${styles.contactIconImg} ${neonStyles.neonHover}`}  />
                         </a>
 

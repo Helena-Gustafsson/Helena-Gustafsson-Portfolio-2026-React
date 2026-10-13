@@ -58,6 +58,7 @@
 .selectedButton {
   border-radius: 8px; 
   transform: scale(1.10); 
+  filter: drop-shadow(0 0 5px var(--neon-turquoise)); 
 }
 
 /* STYLING FOR THE BADGE IMAGES */

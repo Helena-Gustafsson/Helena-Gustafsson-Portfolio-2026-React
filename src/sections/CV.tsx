@@ -8,7 +8,7 @@ function CV() {
       {/* OPEN PDF */}
       <div className={styles.cvContent}>
         <a
-        href="public/CV.FED25.HelenaGustafsson.26.10.07.pdf" 
+        href="/CV.FED25.HelenaGustafsson.26.10.07.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className={styles.openButton}
@@ -21,13 +21,13 @@ function CV() {
         <div className={styles.cvImageContainer}>
      <a href="/Helena-Gustafsson-CV.pdf" target="_blank" rel="noopener noreferrer" className={styles.imageLink}>
           <img 
-            src="public/CV-HG-sid1.png" 
+            src="/CV-HG-sid1.png" 
             alt="Helena Gustafsson CV Sida 1" 
             className={styles.cvImage}
             loading="lazy"
           />
           <img 
-            src="public/CV-HG-sid2.png" 
+            src="/CV-HG-sid2.png" 
             alt="Helena Gustafsson CV Sida 2" 
             className={styles.cvImage}
             loading="lazy"
