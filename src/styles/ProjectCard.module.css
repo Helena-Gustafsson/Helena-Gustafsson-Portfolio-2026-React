@@ -62,25 +62,55 @@
   margin-top: 5%;
 }
 
-
 /* MEDIA QUERIES */
 
 @media (max-width: 910px) {
     .projectImage {
         height: 150px;
         width: auto;
+        object-fit: contain;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 790px) {
     .projectDateType { 
         flex-direction: column; 
         align-items: flex-start; 
+        gap: 0.5rem;
     }
+}
+
+@media (max-width: 600px) {
+  .projectCard {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .projectImage {
+    max-height: 140px; 
+    width: auto;
+    object-fit: contain;
+    margin-left: 0; 
+  }
+
+  .projectType {
+    white-space: normal; 
+  }
+
+  .badgeImage {
+  height: 22px; 
+  }
 }
 
 @media (max-width: 360px) {
     .neonFrame {
         padding: 0.5rem;
     }
+
+    .projectText {
+    font-size: 0.9rem; 
+  }
 }

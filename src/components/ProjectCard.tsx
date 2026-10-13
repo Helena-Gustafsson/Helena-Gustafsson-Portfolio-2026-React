@@ -13,17 +13,15 @@ function ProjectCard({ project }: ProjectCardProps) {
       <h3>{project.title}</h3>
       <img className={styles.projectImage} src={project.image} alt={project.title} />
       <div className={styles.projectDateType}>
-        <p>{project.date}</p>
-        <p className={styles.projectType}> {project.projectType === "individual" ? 
+        <p className={styles.projectText}>{project.date}</p>
+        <p className={`${styles.projectType} ${styles.projectText}`}> {project.projectType === "individual" ? 
         ( <> <img loading="lazy" height="632" width="526"
-          src="public/Icon-individual.png" alt="Individual" /> Individuell uppgift </> ) : 
+          src="/Icon-individual.png" alt="Individual" /> Individuell uppgift </> ) : 
         ( <> <img loading="lazy" height="599" width="726" 
-          src="public/Icon-group.png" alt="Group" /> Gruppuppgift </> )} </p>
+          src="/Icon-group.png" alt="Group" /> Gruppuppgift </> )} </p>
       </div>
-      <p><strong>Beskrivning:</strong> {project.description}</p>
-      <p>{project.description}</p>
+      <p ><strong>Beskrivning:</strong> {project.description}</p>
       {/* <p>{project.details}</p> TO SHOW WHEN CLICKED */}
-
 
       <div className={styles.badgeContainer}>
         {project.tags.map((technologyTag) => {

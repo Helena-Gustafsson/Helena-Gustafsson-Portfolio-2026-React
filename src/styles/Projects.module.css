@@ -1,5 +1,5 @@
 /* 
-  PROJEKTGRID - SYMMETRIHANTERING
+  PROJECTGRID 
   -------------------------------------------------------------
   //Translate comments to English
   - The project grid is designed to be symmetrical and visually appealing.
@@ -23,6 +23,7 @@
   margin-top: 2rem;
   font-family: var(--font-aclonica);
   font-size: 1.2rem;
+  padding-inline: 20px;
 }
 
 
@@ -36,6 +37,7 @@
   margin-bottom: 3rem;  
   padding: 10px;
   align-items: flex-end; 
+  padding-inline: 20px;
 }
 
 /*FILTERBUTTONS CONTAINING SVG BADGE IMAGES*/
@@ -82,15 +84,81 @@
     .projectLayout {                
     grid-template-columns: repeat(2, 1fr); 
     }
-    .projectLayout {
-    article:first-child {
+    /*.projectLayout  > *:first-child {
     grid-column: span 2;
-    }
+    }*/
+  }
+
+
+@media (max-width: 910px) {
+  .projectIntroText {
+    font-size: 1rem; 
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+
+  .projectLayout > *:first-child {
+    grid-column: span 1; 
+  }
+
+   .projectIntroText {
+    font-size: 1rem; 
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filterContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 12px; 
+  }
+
+  .badgeImage {
+    height: 24px; 
+  }
+
+  .filterButton:first-child .badgeImage {
+    height: 28px; 
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .projectLayout {
     grid-template-columns: 1fr;
+    padding: 2.5rem;
   }
+
+  /* Reset back to standard 1-column width */
+  /*.projectLayout article:first-child {
+  grid-column: span 1; 
+}*/
+
+  .filterContainer {
+    gap: 8px; 
+  }
+
+  .badgeImage {
+    height: 22px; 
+  }
+
+  .filterButton:first-child .badgeImage {
+    height: 26px; 
+  }
+}
+
+@media (max-width: 450px) {
+  .projectLayout {
+    padding: 0.5rem;
+  }
+
+  .filterButton:hover {
+  transform: scale(1.03);
+  }
+
+
+  .selectedButton:first-child .badgeImage {
+  transform: scale(0.99); 
+  }
+
 }
