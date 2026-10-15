@@ -115,4 +115,31 @@
         padding: 0.5rem 0; 
         text-align: left; 
     }
+
+
+    /*CSS animation for the menu items when the menu is opened*/
+     .navList.showMenu li {
+        opacity: 0;
+        animation: glide 0.8s ease-out forwards;
+    }
+
+    .navList.showMenu li:nth-child(1) { animation-delay: 0.1s; }
+    .navList.showMenu li:nth-child(2) { animation-delay: 0.2s; }
+    .navList.showMenu li:nth-child(3) { animation-delay: 0.3s; }
+    .navList.showMenu li:nth-child(4) { animation-delay: 0.4s; }
+    .navList.showMenu li:nth-child(5) { animation-delay: 0.5s; }
+    .navList.showMenu li:nth-child(6) { animation-delay: 0.6s; }
+    .navList.showMenu li:nth-child(7) { animation-delay: 0.7s; }
+
+    @keyframes glide {
+        from {
+            opacity: 0;
+            transform: translateX(-30px); 
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);    
+        }
+    } 
+
 }
