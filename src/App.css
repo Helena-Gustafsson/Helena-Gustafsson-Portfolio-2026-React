@@ -27,6 +27,15 @@
     var(--neon-orange)
   );
 
+  --neon-gradient-blob: linear-gradient(
+    135deg,
+    var(--neon-turquoise) 0%,
+    var(--neon-purple) 30%,
+    var(--neon-pink) 75%,
+    var(--neon-orange) 80%,
+    var(--neon-gold) 100%
+  );
+
    /* Layout */
   --max-width: 1500px;
 }
@@ -62,6 +71,8 @@ h1 {
   margin: 0 2rem 2rem 2rem;
   text-align: center;
   font-size: 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 h2 {
@@ -84,4 +95,25 @@ ul {
     background-color: var(--color-bg); 
     min-height: 100vh; 
     padding-top: 2rem;
+
+    position: relative; 
+    overflow: hidden;
+}
+
+.intro-blob {
+  position: absolute;
+  top: 70px;
+  left: 45%;
+  transform: translate(-50%, -50%) translateX(-220px);
+  width: 20vw;
+  min-width: 150px;
+  max-width: 200px;
+  height: 20vw;
+  min-height: 150px;
+  max-height: 200px;
+  background: var(--neon-gradient-blob);
+  filter: blur(30px);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
 }
