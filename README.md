@@ -224,16 +224,17 @@ The final implementation follows the desktop, tablet and mobile wireframes quite
 ## 📝 Reflection
 One of the primary goals of this project was to create a maintainable and scalable portfolio application using reusable React components and a clear separation between data, logic and presentation.
 
-Project data is stored separately from the UI and rendered dynamically through reusable components. The filtering functionality is calculated during rendering instead of storing filtered results in state.
+Looking back at this project, I realized just how much the final result depended on all the time and effort I invested in the planning stage. I spent a lot of time mapping out exactly how I wanted the app to behave, ensuring that the navigation felt logical, unified, and user-friendly. A major focus for me was the responsive design, I worked incredibly hard to ensure the layout remains stable and looks clean across all device sizes and as soon as you added something new there was a domino effect and it needed constant re-adjusting and checking. Using CSS Modules correctly was key.  
 
-The project provided practical experience working with:
-* React
-* TypeScript
-* State Management
-* Form Validation
-* CSS Modules
-* Responsive Design
-* Component Architecture
+My visual system also evolved dynamically during development. While I had planned the `NeonFrame` as a core reusable layout component from the very beginning, building out the pages made me notice unnecessary code repetition on other individual elements. To solve this, I created the shared utility styles `NeonBorder` and `NeonHover`. Integrating these later allowed me to clean up the code and apply a consistent, polished and resuable style across buttons, links, and badges without repeating myself. 
+
+I also put a lot of thought into future-proofing the application. Instead of manually writing IDs for my projects, I set up a dynamic solution so that IDs are generated completely automatically. Whether I add a new project at the beginning, middle, or end of the data list in the future, they will always sequence themselves in the correct order. Building this portfolio step-by-step allowed me to turn my initial ideas into a dynamic interface that functions exactly the way I envisioned.
+
+The project provided invaluable practical experience in:
+* Planning a clean, highly organized folder and file structure, keeping components, dynamic data files, types, styles, and assets like images and PDFs cleanly separated.
+* Structuring the application architecture around logical component views, state management, and clear boundaries between sections.
+* Architecting a sustainable layout system, blending component-specific CSS Modules with global styles, shared variables, and custom theme layouts.
+* Managing complex user flows, such as data filtering systems, and dynamic interface adjustments.
 
 Particular focus was placed on maintainability, reusable components, responsive design across multiple breakpoints, and ensuring a consistent visual identity throughout the application.
 
@@ -244,8 +245,7 @@ The project structure was designed with future scalability in mind. Additional p
 ### Use of AI Tools
 AI has been used in this project as a personal tutor and a technical sounding board. I have utilized it to ask conceptual questions when implementing features not yet fully covered in class, and to double-check that my architectural plans for components and state management were correct and well-thought-out. 
 
-Furthermore, I have actively challenged the AI when receiving suboptimal or incorrect answers, proving my own understanding of React by explaining why a different approach was necessary until the correct solution was achieved. AI was also used efficiently as a pair-programmer to format and compile longer datasets and text strings based on my direct inputs to save development time.
-
+Furthermore, I have actively challenged the AI when receiving suboptimal or incorrect answers, proving my own understanding of React by explaining why a different approach was necessary until the correct solution was achieved. AI was also used efficiently to format and compile longer datasets and texts based on my direct inputs to save development time.
 
 ---
 
