@@ -196,6 +196,9 @@ npm run build
 Portfolio Website:
 [View Live Portfolio](https://helena-gustafsson-portfolio-2026-re.vercel.app/)
 
+### 📸 Final Application
+*(Add screenshots of the completed portfolio)*
+
 ---
 
 ## 🎨 Design Process
@@ -208,11 +211,13 @@ The visual design uses:
 * Responsive layouts
 * Accessibility considerations
 
-### Figma
-*(Add desktop, laptop and mobile figma screenshots)*
+### Deviations from Figma Design
+The final implementation follows the desktop, tablet and mobile wireframes quite closely. In my initial planning, there was an ambition to implement a bilingual Swedish/English (SV/EN) toggle, but I chose to design the wireframes without it and leave it as a feature to add if time permitted or future feature to add. Aside from minor adjustments to typography and layouts during development, the final application stays true to the original layout plan.
 
-### Final Application
-*(Add screenshots of the completed portfolio)*
+### Figma
+![Home & About](readme-images/figma/figma_Home_About.png)
+![Frontend & Projekt](readme-images/figma/figma_Frontend_Projekt.png)
+![CV, LIA & Contact](readme-images/figma/figma_CV_LIA_Contact.png)
 
 ---
 
@@ -236,9 +241,15 @@ Particular focus was placed on maintainability, reusable components, responsive 
 
 The project structure was designed with future scalability in mind. Additional project information is already supported through the existing details property, allowing future expansion of project cards without modifying the overall data structure.
 
+### Use of AI Tools
+AI has been used in this project as a personal tutor and a technical sounding board. I have utilized it to ask conceptual questions when implementing features not yet fully covered in class, and to double-check that my architectural plans for components and state management were correct and well-thought-out. 
+
+Furthermore, I have actively challenged the AI when receiving suboptimal or incorrect answers, proving my own understanding of React by explaining why a different approach was necessary until the correct solution was achieved. AI was also used efficiently as a pair-programmer to format and compile longer datasets and text strings based on my direct inputs to save development time.
+
+
 ---
 
-## 👤 Author
+## 📘 Developer
 Helena Gustafsson
 * [GitHub link](https://github.com/Helena-Gustafsson)
 * [LinkedIn Profile](https://www.linkedin.com/in/helena-gustafsson-46926852/)
