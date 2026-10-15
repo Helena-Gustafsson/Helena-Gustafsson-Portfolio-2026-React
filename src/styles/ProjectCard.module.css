@@ -65,6 +65,8 @@
 
 .projectImage:hover {
   transform: scale(1.05);
+  /*add a subtle neon glow effect on hover in neon turquoise*/
+  box-shadow: 0 0 2px var(--neon-turquoise), 0 0 4px var(--neon-turquoise), 0 0 2px var(--neon-turquoise);
 }
 
 .projectCard {
