@@ -1,6 +1,7 @@
 import type { ProjectType } from '../types/ProjectType';
 import styles from '../styles/ProjectCard.module.css';
 import { badgeMap } from '../data/bagdesData';
+import neonStyles from '../styles/NeonBorder.module.css';
 
 type ProjectCardProps = {
   project: ProjectType;
@@ -11,7 +12,13 @@ function ProjectCard({ project }: ProjectCardProps) {
     <article className={styles.projectCard}>
       
       <h3>{project.title}</h3>
+      <a 
+      href={project.projectUrl} 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      >
       <img className={styles.projectImage} src={project.image} alt={project.title} />
+      </a>
       <div className={styles.projectDateType}>
         <p className={styles.projectText}>{project.date}</p>
         <p className={`${styles.projectType} ${styles.projectText}`}> {project.projectType === "individual" ? 
@@ -45,7 +52,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         })}
       </div>
 
-      <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
+      <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className={`${styles.projectLink} ${neonStyles.neonHover}`} aria-label="Visa projekt">
         <strong>Visa Projekt</strong>
       </a>
     </article>

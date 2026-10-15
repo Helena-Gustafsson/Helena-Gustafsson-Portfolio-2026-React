@@ -60,6 +60,27 @@
   border-radius: 10px;  
   margin-left: 1%;
   margin-top: 5%;
+  transition: transform 0.3s ease;
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  height: 100%;            
+}
+
+.projectLink {
+  margin-top: auto;        
+  padding-top: 1.5rem;  
+  
+  border: 2px solid transparent;
+  padding: 0.6rem 1.2rem;       
+  border-radius: 8px;  
 }
 
 /* MEDIA QUERIES */

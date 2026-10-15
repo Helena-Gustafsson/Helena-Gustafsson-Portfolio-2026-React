@@ -73,9 +73,10 @@ function Projects() {
                             className={`${styles.filterButton} ${isBadgeSelected ? `${styles.selectedButton} ${neonStyles.neonBorder}` : ''}`} 
                             type="button"
                             onClick={() => handleTagClick(tag)} 
+                            aria-label={`Filter by ${tag}`}
                         >
         
-                            <img src={svgBadgePath} alt={`${tag} badge`} className={styles.badgeImage} loading="lazy"/>
+                            <img src={svgBadgePath} alt={`${tag} badge`} className={styles.badgeImage}/>
                         </button>
                     );
                 })}
