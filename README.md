@@ -94,7 +94,7 @@ This project demonstrates knowledge of:
 
 ### Dynamic Project Data
 Project information is stored separately from the UI and rendered dynamically using .map().
-Project IDs are generated automatically from the project data source.
+Project IDs are generated automatically when the project data is mapped into the final project array.
 
 ### Filtering Logic
 Filtering is calculated during rendering using .filter() rather than storing filtered results in a separate state.
@@ -199,7 +199,7 @@ Portfolio Website:
 ---
 
 ## 🎨 Design Process
-The project was planned using wireframes and Figma before development.
+The project was planned through written documentation and hand-drawn wireframes, which were later developed into digital designs in Figma.
 
 The visual design uses:
 * Dark user interface
@@ -208,8 +208,8 @@ The visual design uses:
 * Responsive layouts
 * Accessibility considerations
 
-### Wireframes
-*(Add desktop and mobile wireframe screenshots)*
+### Figma
+*(Add desktop, laptop and mobile figma screenshots)*
 
 ### Final Application
 *(Add screenshots of the completed portfolio)*
@@ -231,6 +231,10 @@ The project provided practical experience working with:
 * Component Architecture
 
 Particular focus was placed on maintainability, reusable components, responsive design across multiple breakpoints, and ensuring a consistent visual identity throughout the application.
+
+### Future Expansion
+
+The project structure was designed with future scalability in mind. Additional project information is already supported through the existing details property, allowing future expansion of project cards without modifying the overall data structure.
 
 ---
 
