@@ -40,6 +40,12 @@ The project focuses on:
 
 ---
 
+## 🌐 Live Demo
+Portfolio Website:
+[View Live Portfolio](https://helena-gustafsson-portfolio-2026-re.vercel.app/)
+
+---
+
 ## ✨ Features
 
 ### Project Showcase
@@ -205,11 +211,7 @@ npm run build
 
 ---
 
-## 🌐 Live Demo
-Portfolio Website:
-[View Live Portfolio](https://helena-gustafsson-portfolio-2026-re.vercel.app/)
-
-### 📸 Final Application
+## 📸 Screenshots - Final Application
 
 ![Homepage desktop view](readme-images/website/home-desktop.png)
 ![Homepage tablet view with animation](readme-images/website/home-tablet-animation.png)
