@@ -1,12 +1,12 @@
 .aboutContainer {
     display: flex;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 1250px;
     width: 100%; 
     margin-inline: auto; 
     margin-top: 2rem;
-    text-align: center;
     padding-inline: 20px; 
+    gap: 50px;
 }
 
 .aboutContent {
@@ -15,6 +15,7 @@
     flex: start;
     gap: 20px;
     padding: 20px;
+    max-width: 1200px;
 }
 
 .profileImage {
@@ -33,13 +34,60 @@
 .aboutText{
     font-size: 1.1rem;
     line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.aboutTextContent {
+  text-align: left;
+}
+
+.neonTurquoise,
+.neonPurple,
+.neonPink,
+.neonGold {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+
+.neonTurquoise {
+  color: var(--neon-turquoise);
+  text-shadow: 0 0 5px rgba(42, 255, 255, 0.3);
+}
+
+.neonPurple {
+  color: var(--neon-purple);
+  text-shadow: 0 0 5px rgba(155, 77, 255, 0.3);
+}
+
+.neonPink {
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px rgba(255, 77, 212, 0.3);
+}
+
+.neonGold {
+  color: var(--neon-gold);
+  text-shadow: 0 0 5px rgba(255, 233, 163, 0.3);
+}
+
+.aboutTextEnd {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: var(--font-aclonica);
+  background: var(--neon-gradient-text);
+  -webkit-background-clip: text;            
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 910px) {
   .aboutContent {
     flex-direction: column; 
-    text-align: center; 
+    gap: 20px;
   }
 
   .profileImage {
@@ -53,5 +101,16 @@
 
     .aboutText {
         font-size: 1rem;
+    }
+  
+  .aboutTextEnd {
+    font-size: 1.1rem;
+  }
+
+    .aboutTurquoise,
+    .neonPurple,
+    .neonPink,
+    .neonGold {
+    font-size: 1.1rem;
     }
 }

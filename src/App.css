@@ -36,6 +36,16 @@
     var(--neon-gold) 100%
   );
 
+  --neon-gradient-text: linear-gradient(
+  135deg,
+  var(--neon-turquoise) 0%,
+  var(--neon-turquoise) 15%, 
+  var(--neon-purple) 40%,
+  var(--neon-pink) 60%,
+  var(--neon-orange) 85%,    
+  var(--neon-gold) 100%
+);
+
    /* Layout */
   --max-width: 1500px;
 }
