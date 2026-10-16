@@ -210,7 +210,15 @@ Portfolio Website:
 [View Live Portfolio](https://helena-gustafsson-portfolio-2026-re.vercel.app/)
 
 ### 📸 Final Application
-*(Add screenshots of the completed portfolio)*
+
+![Homepage desktop view](readme-images/website/home-desktop.png)
+![Homepage tablet view with animation](readme-images/website/home-tablet-animation.png)
+![Homepage mobile view](readme-images/website/home.png)
+![About page layout](readme-images/website/about.png)
+![Frontend profile page tablet view](readme-images/website/frontend-profile-tablet.png)
+![Projects showcase page](readme-images/website/projects.png)
+![Contact form validation error on send](readme-images/website/contact-error-send.png)
+![Expanded hamburger menu navigation](readme-images/website/hamburger-meny.png)
 
 ---
 
