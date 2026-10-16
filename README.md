@@ -241,6 +241,8 @@ The final implementation follows the desktop, tablet and mobile wireframes quite
 ![Frontend & Projekt](readme-images/figma/figma_Frontend_Projekt.png)
 ![CV, LIA & Contact](readme-images/figma/figma_CV_LIA_Contact.png)
 
+[Figma Länk](https://www.figma.com/design/3y3PGkwVeN3fbU4zBXMxDX/Helena-Potfolio?node-id=0-1&t=yd3YRDl2DzEGzxNo-1)
+
 ---
 
 ## 📝 Reflection
