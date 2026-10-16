@@ -6,9 +6,9 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     projectType: 'group',
     date: 'September 2026',
     description:
-      'En bokapplikation byggd med API-integration och frontendutveckling.',
+      'En bokapplikation byggd med API-integration och frontendutveckling. Fullstack-utveckling med dynamisk CRUD-hantering, avancerad validering och rollbaserad behörighetskontroll.',
     details:
-      'Focus on API integration, user interaction and modern frontend development.',
+      'Detta projekt involverade utveckling av en komplett bokapplikation med fokus på API-integration och modern frontendutveckling.<br /><br />Applikationen har ett fullständigt administratörsgränssnitt skyddat av rollbaserad autentisering. Inloggade administratörer kan hantera databasen genom dynamisk CRUD-logik (.map() och .join()) för att skapa, redigera (via PATCH) och ta bort böcker med säkra bekräftelserutor. Frontend innehåller strikt datanormalisering (trimning och formatering av genrer till rena arrayer) samt automatisk typkonvertering av utgivningsår. Systemet har omfattande felhantering med omedelbar feedback, valideringsmeddelanden och tidsstyrda omdirigeringar. Backend är uppbyggd med Express och Mongoose (MongoDB) med token-baserad åtkomstkontroll, där alla publika rutter är begränsade till läsrättigheter medan skrivrättigheter kräver validerad admin-token. Alla ändpunkter har verifierats genom Insomnia.',
     image: '/projekt-images/Bookwork.png',
     tags: ['TypeScript', 'JavaScript', 'API', 'HTML', 'CSS'],
     projectUrl: 'https://api-assignment-2-eta.vercel.app/index.html',
@@ -66,7 +66,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     projectType: 'individual',
     date: 'April 2026',
     description:
-      'En omfattande användarupplevelse- och tillgänglighetsanalys av pensionsmyndigheten.se baserad på WCAG 2.1-riktlinjer och lagkrav.',
+      'En omfattande användarupplevelse- och tillgänglighetsanalys av pensionsmyndigheten baserad på WCAG 2.1-riktlinjer och lagkrav.',
     details:
       'Detta projekt genomfördes som en individuell granskningsuppgift inom kursen UX/Usability med fokus på att utvärdera pensionsmyndigheten.se. Genom att etablera tre tydliga målgruppspersonas (den blivande pensionären, den redan pensionerade samt mitt-i-livet-planeraren) analyserades webbplatsens användbarhet, kognitiva belastning och navigationsdjup. Granskningen utgick från gällande lagkrav såsom DOS-lagen, Språklagen och WCAG 2.1-riktlinjerna. I analysen identifierades kritiska brister i målgruppsanpassningen, däribland för låga kontrastförhållanden (bland annat i brödsmulenavigeringen), otillräckliga textstorlekar (10–15px) i löptext och grafik, samt dolda eller otydliga sök- och kontaktvägar. Dessutom utvärderades brister i myndighetens egen tillgänglighetsredogörelse gällande felaktig HTML-struktur, felaktig tabbordning vid tangentbordsnavigering och saknade skärmläsarfunktioner. Rapporten sammanställdes till en presentation med konkreta design- och strukturella förbättringsförslag för att skapa en tryggare digital miljö för användare med nedsatt syn eller begränsad digital vana.',
     image: '/projekt-images/Pensionsmyndigheten.png',
@@ -110,7 +110,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     projectType: 'individual',
     date: 'Februari 2026',
     description:
-      'En funktionell budgetapplikation i TypeScript med LocalStorage, realtidsbalansering och 100% i betyg på Lighthouse över samtliga kategorier.',
+      'En funktionell budgetapplikation i TypeScript med LocalStorage och realtidsbalansering.',
     details:
       "Denna applikation utvecklades med fokus på strikt typning i TypeScript och tillgänglighet. Genom ett kundanpassat gränssnitt kan användaren registrera inkomster och utgifter via dropdown-kategorier och fritextfält, där utgifter automatiskt normaliseras till negativa värden. All data sparas och raderas synkront mot webbläsarens LocalStorage med ett fullständigt typat interface (IBudgetItem). Sidan formaterar alla valutor dynamiskt enligt svensk standard (två decimaler och tusentalsavgränsare) samt ger omedelbar visuell och textuell feedback baserat på användarens balans: ramen runt totalen skiftar färg (röd för negativ, grön för positiv) och villkorliga varnings- eller bekräftelsemeddelanden renderas dynamiskt. En global 'Radera allt'-funktion har implementerats med inbyggd säkerhetsbekräftelse (confirm box). Projektet uppfyller extremt höga krav på tillgänglighet genom användning av 'aria-live=\"polite\"' för dynamiska uppdateringar och klassen 'sr-only' för skärmläsarspecifik information, vilket resulterade i ett perfekt 100-resultat på Lighthouse i samtliga fyra testkategorier.",
     image: '/projekt-images/budgetapp.png',
@@ -132,7 +132,7 @@ export const projectDataWithoutId: Omit<ProjectType, 'id'>[] = [
     projectType: 'individual',
     date: 'Januari 2026',
     description:
-      'En interaktiv och responsiv webbshop för munkar med avancerad varukorgslogik, realtidsvalidering och dynamiska specialregler.',
+      'En interaktiv och responsiv webbshop för munkar med avancerad varukorgslogik, realtidsvalidering och specialregler, med fokus på DOM-manipulation och händelsehantering.',
     details:
       'Detta projekt utvecklades som en examinationsuppgift inom JavaScript-introduktionen och fokuserar på avancerad DOM-manipulation, UI-flöden och händelsehantering. Applikationen hanterar 12 unika produkter fördelade på tre kategorier med stöd för mångsidig filtrering och sortering (namn, pris, betyg). Varukorgen beräknar dynamiskt fraktkostnader samt tillämpar specialregler: fraktfritt vid köp över 15 munkar, automatisk blockering av fakturabetalning vid ordersummor över 800 kr, samt en 15-minuters sessionstimer som rensar beställningen om användaren är för långsam. Kundformuläret är fullt validerat med hjälp av reguljära uttryck (Regex) som triggas när användaren lämnar ett fält (blur), och skicka-knappen aktiveras först när alla obligatoriska fält samt GDPR-godkännandet är uppfyllda. Visuell feedback har implementerats genom en tillfällig bakgrundsfärgändring i 1 sekund vid varje varukorgsuppdatering. Gränssnittet är helt responsivt och strukturerat med Sass, samt optimerat för tillgänglighet (Accessibility) enligt Lighthouse och HTML/CSS-validering.',
     image: '/projekt-images/MunkShoppen.png',
