@@ -218,6 +218,7 @@ Portfolio Website:
 ![Frontend profile page tablet view](readme-images/website/frontend-profile-tablet.png)
 ![Projects showcase page](readme-images/website/projects.png)
 ![Contact form validation error on send](readme-images/website/contact-error-send.png)
+![UI messages and borders](readme-images/website/msgs-reusable-frames.png)
 ![Expanded hamburger menu navigation](readme-images/website/hamburger-meny.png)
 
 ---
