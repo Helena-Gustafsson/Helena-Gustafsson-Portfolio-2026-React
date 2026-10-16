@@ -30,6 +30,7 @@ The project focuses on:
 ![Vite](./readme-images/badges/Vite.svg)
 ![CSS Modules](./readme-images/badges/cssModules.svg)
 ![Responsive Design](./readme-images/badges/responsive.svg)
+![Framer Motion](./readme-images/badges/FramerMotion.svg)
 
 ### Tools & Services
 
@@ -73,6 +74,14 @@ The application has been adapted for:
 * Tablet
 * Mobile
 
+### Intro Animations
+
+The home section includes coordinated Framer Motion animations for the introductory visual elements and hero content. Animations are configured to play only once per session using sessionStorage, preventing unnecessary replays during navigation.
+
+### Navigation
+
+A responsive navigation system with an CSS animated hamburger menu was implemented to provide a consistent user experience across desktop, tablet and mobile devices.
+
 ---
 
 ## 🎓 Learning Objectives
@@ -88,6 +97,7 @@ This project demonstrates knowledge of:
 * Responsive Design
 * CSS Modules
 * Component-Based Architecture
+* Framer motion (incl Session Storage)
 
 ---
 
@@ -227,7 +237,7 @@ One of the primary goals of this project was to create a maintainable and scalab
 
 Looking back at this project, I realized just how much the final result depended on all the time and effort I invested in the planning stage. I spent a lot of time mapping out exactly how I wanted the app to behave, ensuring that the navigation felt logical, unified, and user-friendly. A major focus for me was the responsive design, I worked incredibly hard to ensure the layout remains stable and looks clean across all device sizes and as soon as you added something new there was a domino effect and it needed constant re-adjusting and checking. Using CSS Modules correctly was key.  
 
-My visual system also evolved dynamically during development. While I had planned the `NeonFrame` as a core reusable layout component from the very beginning, building out the pages made me notice unnecessary code repetition on other individual elements. To solve this, I created the shared utility styles `NeonBorder` and `NeonHover`. Integrating these later allowed me to clean up the code and apply a consistent, polished and resuable style across buttons, links, and badges without repeating myself. 
+My visual system also evolved dynamically during development. While I had planned the `NeonFrame` as a core reusable layout component from the very beginning, building out the pages made me notice unnecessary code repetition on other individual elements. To solve this, I created the shared utility styles `NeonBorder` and `NeonHover`. Integrating these later allowed me to clean up the code and apply a consistent, polished and reusable style across buttons, links, and badges without repeating myself. 
 
 I also put a lot of thought into future-proofing the application. Instead of manually writing IDs for my projects, I set up a dynamic solution so that IDs are generated completely automatically. Whether I add a new project at the beginning, middle, or end of the data list in the future, they will always sequence themselves in the correct order. Building this portfolio step-by-step allowed me to turn my initial ideas into a dynamic interface that functions exactly the way I envisioned.
 
@@ -236,6 +246,8 @@ The project provided invaluable practical experience in:
 * Structuring the application architecture around logical component views, state management, and clear boundaries between sections.
 * Architecting a sustainable layout system, blending component-specific CSS Modules with global styles, shared variables, and custom theme layouts.
 * Managing complex user flows, such as data filtering systems, and dynamic interface adjustments.
+
+Towards the end of the project, I also explored animation using Framer Motion. Several introductory animations were carefully synchronized across different elements to create a cohesive landing experience. For the CreativeImage component, sessionStorage was used to prevent the animation from repeatedly triggering during normal navigation, helping to maintain both visual impact and usability.
 
 Particular focus was placed on maintainability, reusable components, responsive design across multiple breakpoints, and ensuring a consistent visual identity throughout the application.
 
