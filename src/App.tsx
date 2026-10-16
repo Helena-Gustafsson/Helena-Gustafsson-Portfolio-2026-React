@@ -40,16 +40,27 @@ function App() {
   }}
 />
 
-    <motion.h1
-    initial={{ scale: 0., opacity: 0 }}
-    animate={{ scale: [0.9, 1.2, 1], opacity: [0, 1] }}
+  <motion.h1
+    initial={{ scale: 0.9, opacity: 0 }}
+    animate={{ 
+      scale: [0.9, 1.2, 1], 
+      opacity: [0, 1, 1],
+      color: ["rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 0)", "#ffffff"],
+    }}
+    style={{
+      background: "var(--neon-gradient-short-text)",
+      WebkitBackgroundClip: "text",
+      backgroundClip: "text",
+      WebkitTextFillColor: "currentColor"
+    }}
     transition={{
       delay: 3.5,
       duration: 3,
+      ease: "easeInOut"
     }}
-    >
-      Helena Gustafsson
-    </motion.h1>
+  >
+    Helena Gustafsson
+  </motion.h1>
 
       {activeSection === "home" && <Home />} 
       {activeSection === "about" && <About />} 

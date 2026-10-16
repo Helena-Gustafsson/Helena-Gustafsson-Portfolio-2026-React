@@ -46,6 +46,15 @@
   var(--neon-gold) 100%
 );
 
+--neon-gradient-short-text: linear-gradient(
+    90deg,
+    var(--neon-turquoise) 25%,
+    var(--neon-purple) 45%,
+    var(--neon-pink) 55%,
+    var(--neon-orange) 70%,
+    var(--neon-gold) 80%
+  );
+
    /* Layout */
   --max-width: 1500px;
 }
