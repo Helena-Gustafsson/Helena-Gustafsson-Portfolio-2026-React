@@ -67,6 +67,8 @@ Additional functionality:
 * Error handling through React state
 * Success message on successful submission
 * Dropdown-based subject selection
+* Clearing of main error/success messages after 4 seconds
+* Instant clearing of field error upon typing 
 
 ### Responsive Design
 The application has been adapted for:
