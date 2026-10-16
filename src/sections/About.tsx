@@ -26,7 +26,7 @@ function About() {
                 </p>
 
                 <p className={styles.aboutText}>
-                  Min bakgrund är kanske inte den mest traditionella vägen in i techvärlden. Under åren har jag arbetat med juridik, administration,<span className={styles.neonGold}> koordinering och projektledning</span>, erfarenheter som lärt mig att navigera i komplexa situationer, hålla ihop flertalet delar samtidigt och kommunicera med människor på alla nivåer. Kombinationen av struktur, ansvarstagande och kreativitet har blivit en av mina absolut största styrkor.
+                  Min bakgrund är kanske inte den mest traditionella vägen in i techvärlden. Under åren har jag arbetat med juridik, administration,<span className={styles.lightOrange}> koordinering och projektledning</span>, erfarenheter som lärt mig att navigera i komplexa situationer, hålla ihop flertalet delar samtidigt och kommunicera med människor på alla nivåer. Kombinationen av struktur, ansvarstagande och kreativitet har blivit en av mina absolut största styrkor.
                 </p>
 
                 <p className={styles.aboutText}>
@@ -38,7 +38,7 @@ function About() {
                 </p>
 
                 <p className={styles.aboutText}>
-                  När man har ansvarat för 40 bolag, hundratals uppgifter och fler parallella deadlines än vad som borde vara rimligt, lär man sig snabbt vikten av <span className={styles.neonTurquoise}>struktur och prioritering</span>. Jag är personen som skapar fungerande processer, ser både helhet och detaljer och säkerställer att ingenting faller mellan stolarna, samtidigt som jag behåller energi, driv och fokus på målet. Det finns en anledning till att jag ibland kallas <em className={styles.neonGold}>"Queen of Ticklists"</em> — färgkodade för visuell överblick? Ja, såklart!
+                  När man har ansvarat för 40 bolag, hundratals uppgifter och fler parallella deadlines än vad som borde vara rimligt, lär man sig snabbt vikten av <span className={styles.neonTurquoise}>struktur och prioritering</span>. Jag är personen som skapar fungerande processer, ser både helhet och detaljer och säkerställer att ingenting faller mellan stolarna, samtidigt som jag behåller energi, driv och fokus på målet. Det finns en anledning till att jag ibland kallas <em className={styles.lightOrange}>"Queen of Ticklists"</em> — färgkodade för visuell överblick? Ja, såklart!
                 </p>
 
                 <p className={styles.aboutTextEnd}>
